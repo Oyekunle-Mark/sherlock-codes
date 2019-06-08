@@ -1,3 +1,9 @@
+/**
+ * *Takes a numeral and returns a string representation of the number in Roman numerals
+ * @param {number} number
+ * @returns {string}
+ */
+
 function romanNumeralize(number) {
   const romanToNumeralTable = {
     M: 1000,
