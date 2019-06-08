@@ -4,7 +4,7 @@ Your result must be a string.
 */
 
 function reverseString(str) {
-  return String([...str].reverse().join(''));
+  return [...str].reverse().join('');
 }
 
-reverseString("hello");
+console.log('reverseString("hello"): ', reverseString("hello"));
