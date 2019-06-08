@@ -1,3 +1,9 @@
+/** 
+ * *Converts a number into its binary format
+ * @param {number} number
+ * @returns {string}
+ */
+
 function toBinaryString(number) {
   let binary = '';
 
