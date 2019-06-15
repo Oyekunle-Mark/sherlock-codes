@@ -66,7 +66,11 @@ let arcadeGames = [
 ];
 
 
-  // Don't modify this function
+  /**
+   * @param {[]} arr
+   * @param {number} index
+   * @returns {string}
+   */
   function titleMfrYearString (arr, index) {
     return `${arr[index].title} was made by ${arr[index].manufacturer} in ${arr[index].year}`;
   }
