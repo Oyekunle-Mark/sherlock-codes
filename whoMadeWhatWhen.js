@@ -81,8 +81,14 @@ let arcadeGames = [
    ** returns an array of format strings if the manufacturer exists in the array
    ** returns a single error format string if the manufacturer is not in the array
   **/
- 
-  function whoMadeWhatWhen(arr, mfrStr, cb) {
+
+ /**
+  * @param {[]} arr
+  * @param {string} mfrStr
+  * @param {function} cb
+  * @returns {string[]}
+  */
+ function whoMadeWhatWhen(arr, mfrStr, cb) {
     // create empty array to store the results in
     let retval = [];
 
