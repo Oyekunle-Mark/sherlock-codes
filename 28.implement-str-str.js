@@ -4,6 +4,10 @@
  * [28] Implement strStr()
  */
 /**
+ * Determines the  position of a needle in a haystack
+ * *Returns the index if found otherwise returns -1
+ * !if needle is an empty string returns 0
+ * 
  * @param {string} haystack
  * @param {string} needle
  * @return {number}
