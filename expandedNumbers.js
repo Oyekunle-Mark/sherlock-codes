@@ -1,3 +1,8 @@
+/**
+ * *Expands the digits in a number.
+ * @param {*} num
+ * @returns {string}
+ */
 function expandedNums(num) {
   const modulo = 10;
   const numStr = num.toString().split('');
