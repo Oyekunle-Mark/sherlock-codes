@@ -5,7 +5,7 @@
  */
 function expandedNums(num) {
   const modulo = 10;
-  const numStr = num.toString().split('');
+  const numStr = num.toString();
   let expanded = [];
   
   for (let i = 0; i < numStr.length; i++) {
@@ -18,3 +18,4 @@ function expandedNums(num) {
 }
 
 console.log(expandedNums(562));
+console.log(expandedNums(12345));
