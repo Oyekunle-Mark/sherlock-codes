@@ -1,3 +1,9 @@
+/**
+ * Determines if the parenthesis in a string is balanced or not.
+ * Returns true if balanced and false if otherwise
+ * @param {string} str
+ * @returns {boolean}
+ */
 function balancedBrackets(str) {
   let matched = true;
   const brackets = [];
