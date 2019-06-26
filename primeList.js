@@ -17,14 +17,12 @@ function primeList(start, end) {
 
 /**
  * Returns true or false if a number is false or not
- * todo try reducing traversing the whole length of number
- * @param {number} n
  * @returns {boolean}
  */
 const isPrime = n => {
   let i = 2;
 
-  while (i < n) {
+  while (i < Math.floor(n / 2)) {
     if (n % i === 0) return false;
     i++;
   }
