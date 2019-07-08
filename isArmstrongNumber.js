@@ -1,3 +1,9 @@
+/**
+ * *Checks if a number is an Armstrong number or not
+ * *Returns true if it is and false otherwise
+ * @param {number} n
+ * @returns {boolean}
+ */
 function isArmstrongNumber(n) {
   const numbersArray = String(n).split('');
   const lengthOfNumbers = numbersArray.length;
