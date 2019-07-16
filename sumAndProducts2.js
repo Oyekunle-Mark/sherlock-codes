@@ -1,6 +1,6 @@
 /**
- * Returns the numbers that adds up to the first argument and equals the second argument when multiplied
- * The result is always an array sorted by number
+ * *Returns the numbers that adds up to the first argument and equals the second argument when multiplied
+ * *The result is always an array sorted by number
  * @param {number} sum
  * @param {number} product
  * @returns {number[]}
