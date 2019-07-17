@@ -62,3 +62,9 @@ function XOR(x, y) {
 
   return false;
 }
+
+console.log('NOT 0:', NOT(0));
+console.log('2 AND "hi":', AND(2, 'hi'));
+console.log('2 NAND "hi":', NAND(2, 'hi'));
+console.log('2 OR "":', OR(2, ''));
+console.log('true XOR true:', XOR(true, true));
