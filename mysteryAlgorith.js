@@ -1,3 +1,8 @@
+/**
+ * @param {number} x
+ * @param {number} y
+ * @returns {number}
+ */
 function mystery(x, y) {
   while (x !== y) {
     if (x > y) x = x - y;
