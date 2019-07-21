@@ -1,4 +1,8 @@
 /**
+ * Takes two numbers,
+ * Assigns the first to the value of the first - second if first > second
+ * Assigns second to the value of the second - first if second > first.
+ * Returns first or second when first === second.
  * @param {number} x
  * @param {number} y
  * @returns {number}
