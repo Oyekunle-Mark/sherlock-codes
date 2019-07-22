@@ -13,7 +13,9 @@ function rotateImage(arr) {
     }
   }
 
-  return arr.map(ar => ar.reverse());
+  for (const i of arr) i.reverse();
+
+  return arr;
 }
 
 console.log(rotateImage([[1, 2], [3, 4]]));
