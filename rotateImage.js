@@ -2,7 +2,7 @@
  * Given an image represented by an NxN matrix,
  * where each pixel in the image is an integer from 0 - 9,
  * write a method to rotate the image by 90 degrees counterclockwise.
- * !This solution works in place
+ * !This solution swaps value in place
  * @param {array[]} arr
  * @returns {array[]}
  */
