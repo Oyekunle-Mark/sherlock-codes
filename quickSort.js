@@ -1,11 +1,16 @@
-function quickSort(nums) {
-  if (nums.length < 2) return nums;
+/**
+ * Sorts an array numbers with the quick sort algorithm
+ * @param {*} arr array to be sorted
+ * @returns
+ */
+function quickSort(arr) {
+  if (arr.length < 2) return arr;
 
-  const pivot = nums.pop();
+  const pivot = arr.pop();
   const left = [],
     right = [];
 
-  for (const i of nums) {
+  for (const i of arr) {
     if (i <= pivot) left.push(i);
     else right.push(i);
   }
