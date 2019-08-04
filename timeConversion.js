@@ -1,3 +1,8 @@
+/**
+ * Converts 12 hour time to 24 hour format.
+ * @param {string} s the time in 12 hour format
+ * @returns
+ */
 function timeConversion(s) {
   const time = s;
 
