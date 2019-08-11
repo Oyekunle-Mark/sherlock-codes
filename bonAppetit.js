@@ -1,3 +1,9 @@
+/**
+ * Hacker rank bonAppetit challenge.
+ * @param {number} bill
+ * @param {number} k
+ * @param {number} b
+ */
 function bonAppetit(bill, k, b) {
   const billWithoutAnna = [...bill];
   billWithoutAnna.splice(k, 1);
