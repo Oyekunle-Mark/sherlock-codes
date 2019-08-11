@@ -1,3 +1,8 @@
+/**
+ * Hacker rank migratory bird challenge.
+ * @param {number[]} arr input array
+ * @returns {number}
+ */
 function migratoryBirds(arr) {
   const findMostFrequencyForNumberOneToFive = ar => {
     const mostFrequent = [];
