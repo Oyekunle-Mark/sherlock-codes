@@ -1,3 +1,8 @@
+/**
+ * Hacker rank birthday cake challenge
+ * @param {number[]} ar
+ * @returns {number}
+ */
 function birthdayCakeCandles(ar) {
   const max = Math.max(...ar);
   let count = 0;
