@@ -1,3 +1,7 @@
+/**
+ * Hacker rank staircase challenge
+ * @param {number} n the number of steps
+ */
 function staircase(n) {
   let i = 1;
 
