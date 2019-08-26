@@ -1,3 +1,9 @@
+/**
+ * Hacker rank migratory bird challenge
+ * @param {number} n
+ * @param {number[]} queries
+ * @returns
+ */
 function arrayManipulation(n, queries) {
   const arr = Array(n).fill(0);
 
