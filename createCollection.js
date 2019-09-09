@@ -29,6 +29,11 @@ const data = [
   },
 ];
 
+/**
+ * Takes an array of object and creates a group based on the object.questionId
+ * @param {object[]} arr
+ * @returns {object}
+ */
 const createCollection = arr => {
   const group = {};
 
