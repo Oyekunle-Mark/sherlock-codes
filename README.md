@@ -8,4 +8,5 @@ Code challenges on Leet Code could be found here as well.
 **Happy viewing.**
 
 ## Author
-*Oyekunle Oloyede*
+
+_Oyekunle Oloyede_
