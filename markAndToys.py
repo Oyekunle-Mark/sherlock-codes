@@ -9,7 +9,7 @@ def maximumToys(prices, k):
         spent += price
 
         # if spent is less than budget, increase the number of toys otherwise break out of the loop
-        if spent < k:
+        if spent <= k:
             number_of_toys += 1
         else:
             break
