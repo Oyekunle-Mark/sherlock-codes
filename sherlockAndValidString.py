@@ -1,4 +1,12 @@
 def isValid(s):
+    """Solution to hacker rank sherlock and valid string challenge
+
+    Arguments:
+        s {str} -- the string to be tested
+
+    Returns:
+        string -- YES if valid and NO if not
+    """
     # remove duplicates from the strings
     s_set = set(s)
 
