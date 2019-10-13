@@ -1,4 +1,9 @@
 def minimumBribes(q):
+    """Hacker rank minimum bribe challenge
+
+    Arguments:
+        q {list} -- A list of number
+    """
     bribes = 0
 
     # Use enumerate to get index and value, starting index from 1
