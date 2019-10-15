@@ -1,4 +1,12 @@
 def whatFlavors(cost, money):
+    """This solution works by looping through the cost and saving the each cost and index as a key
+    value pair in the map. When the second pair is found the index of the first is retrieved from
+    the map and printed along with the first.
+
+    Arguments:
+        cost {int[]} -- the cost of the ice cream
+        money {int} -- the money available
+    """
     # hold the index + 1 of the numbers in cost in the hash table using the number as key and the index + 1 as value
     map = {}
 
@@ -11,9 +19,13 @@ def whatFlavors(cost, money):
         if diff in map:
             # print the required index
             print(f"{map[diff]} {i + 1}")
+            # break since the match has been found
+            break
         # otherwise, add the number and index to the map
         else:
             map[n] = i + 1
+
+    print(map)
 
 
 whatFlavors([1, 4, 5, 3, 2], 4)
