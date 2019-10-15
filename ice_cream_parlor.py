@@ -25,8 +25,6 @@ def whatFlavors(cost, money):
         else:
             map[n] = i + 1
 
-    print(map)
-
 
 whatFlavors([1, 4, 5, 3, 2], 4)
 whatFlavors([2, 2, 4, 3], 4)
