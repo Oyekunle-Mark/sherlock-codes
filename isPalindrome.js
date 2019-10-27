@@ -4,8 +4,13 @@
  * @returns {Boolean}
  */
 function isPalindrome(word) {
-    if (word.split('').reverse().join('') === word)
-      return true
+  if (
+    word
+      .split('')
+      .reverse()
+      .join('') === word
+  )
+    return true;
 
-    return false;
+  return false;
 }
