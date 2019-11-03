@@ -21,21 +21,21 @@ function ShoppingCart() {
   this.items = {};
 }
 
-ShoppingCart.prototype.addItem = function(itemName,quantity,price) {
-  this.total += price*quantity;
-  this.items[itemName] = quantity; 
+ShoppingCart.prototype.addItem = function(itemName, quantity, price) {
+  this.total += price * quantity;
+  this.items[itemName] = quantity;
 };
 
-ShoppingCart.prototype.removeItem = function(itemName,quantity,price) {
-  this.total -= price*quantity;
-  this.items[itemName]= this.items[itemName] - quantity ; 
+ShoppingCart.prototype.removeItem = function(itemName, quantity, price) {
+  this.total -= price * quantity;
+  this.items[itemName] = this.items[itemName] - quantity;
 };
 
 ShoppingCart.prototype.checkout = function(cashPaid) {
-  if(cashPaid < this.total){
-    return "Cash paid not enough";
+  if (cashPaid < this.total) {
+    return 'Cash paid not enough';
   }
-  return cashPaid-this.total ;
+  return cashPaid - this.total;
 };
 
 function Shop() {
@@ -45,5 +45,5 @@ function Shop() {
 Shop.prototype = Object.create(ShoppingCart.prototype);
 
 Shop.prototype.removeItem = function() {
-  this.quantity = this.quantity-1;
+  this.quantity = this.quantity - 1;
 };
