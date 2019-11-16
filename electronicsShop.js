@@ -12,6 +12,7 @@ function getMoneySpent(keyboards, drives, b) {
   return prices.length ? Math.max(...prices) : -1;
 }
 
+
 console.log(
   'TCL: getMoneySpent([3, 1], [5, 2, 8], 10)',
   getMoneySpent([3, 1], [5, 2, 8], 10),
