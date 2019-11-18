@@ -6,22 +6,31 @@ def climbingLeaderboard(scores, alice):
         alice {list} -- an array of integers that represent Alice's scores 
     """
     # initialize  pos to one
+    pos = 1
+    # initialize current_pos to zero
+    current_pos = 0
     # initialize current_score_pos to length of alice - 1
-    # initialize current_score to first item in scores
+    current_score_pos = len(alice) - 1
     # initialize alice_pos to empty list
-    # loop through scores
-        # if item at index current_score_pos of alice is greater than current score
+    alice_pos = []
+    # loop  while current_pos is less than length of scores
+    while current_pos < len(scores):
+        # if item at current_score_pos of alice is greater than item at current_pos of scores
             # append pos to alice_pos
-            # decrement current_score_pos
             # increment pos
-            # continue
-        # otherwise, if item at index current_score_pos of alice equals current score
+            # decrement current_score_pos
+        # otherwise if item at current_score_pos of alice is equal to item at current_pos of scores
             # append pos to alice_pos
-            # decrement current_score_pos
             # increment pos
+            # decrement current_score_pos
+            # increment current_pos
+        # otherwise
+            # increment current_pos
 
-        # if current_score is less than the current score
-            # set current_score to the current score
+    # loop while current_score_pos is >= 0
+        # append pos to alice_pos
+        # increment pos
+        # decrement current_score_pos
 
     # return the result of reversing alice_pos
     pass
