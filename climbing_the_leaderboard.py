@@ -1,4 +1,17 @@
 def find_score_pos(scores, s):
+    # set pos to 1
+    # set score_pos to 0
+    # set current_score to the first item in scores
+    # loop through scores
+        # if s is greater that score
+            # return pos
+        # if s is equal to score
+            # return pos
+        # otherwise
+            # if current_score is greater than score
+                # increment pos
+        # set current_pos to score
+    # return pos
     pass
 
 
@@ -9,6 +22,9 @@ def climbingLeaderboard(scores, alice):
         scores {list} -- an array of integers that represent leaderboard scores 
         alice {list} -- an array of integers that represent Alice's scores 
     """
+    # initialize a variable alice_pos to an empty list
+    # loop through the alice list
+        # call find_score_pos with score and append result to alice_pos
     pass
 
 
