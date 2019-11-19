@@ -9,3 +9,7 @@ def hurdleRace(k, height):
     else:
         # return max_height - k
         return max_height - k
+
+
+print(hurdleRace(4, [1, 6, 3, 5, 2]))
+print(hurdleRace(7, [2, 5, 4, 5, 2]))
