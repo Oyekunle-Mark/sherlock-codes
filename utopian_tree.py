@@ -3,6 +3,7 @@ def utopianTree(n):
     cycle = 0
     # set height to 1
     height = 1
+
     # loop while cycle is less than n
     while cycle < n:
         # increment cycle by one
@@ -15,6 +16,7 @@ def utopianTree(n):
         else:
             # increment height by one
             height += 1
+
     # return height
     return height
 
