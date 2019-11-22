@@ -1,0 +1,2 @@
+def getMinimumUniqueSum(arr):
+    pass
