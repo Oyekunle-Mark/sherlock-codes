@@ -1,0 +1,2 @@
+def longestVowelSubsequence(s):
+    pass
