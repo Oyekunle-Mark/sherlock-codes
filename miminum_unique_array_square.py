@@ -13,5 +13,12 @@ def getMinimumUniqueSum(arr):
             while number in unique_numbers:
                 # increment number
                 number += 1
+            # add number to unique_numbers
+            unique_numbers.add(number)
     # return sum of unique_numbers
     return sum(unique_numbers)
+
+
+print(getMinimumUniqueSum([1, 2, 2]))
+print(getMinimumUniqueSum([1, 2, 3]))
+print(getMinimumUniqueSum([2, 2, 4, 5]))
