@@ -13,8 +13,8 @@ def longestVowelSubsequence(s):
             if char == vowel[pos]:
                 # increment length
                 length += 1
-                # continue
-                continue
+            # continue
+            continue
         # if char is char at pos of vowel
         if char == vowel[pos]:
             # increment length
@@ -33,3 +33,7 @@ def longestVowelSubsequence(s):
     else:
         # return 0
         return 0
+
+
+print(longestVowelSubsequence("aeiaaioooaauuaeiu"))
+print(longestVowelSubsequence("aeiaaiooaa"))
