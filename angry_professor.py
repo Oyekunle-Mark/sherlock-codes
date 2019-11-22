@@ -13,3 +13,7 @@ def angryProfessor(k, a):
         return "NO"
     # return YES
     return "YES"
+
+
+print(angryProfessor(3, [-1, -3, 4, 2]))
+print(angryProfessor(2, [0, -1, 2, 1]))
