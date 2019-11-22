@@ -4,6 +4,7 @@ def countPairs(arr, k):
     # set occurrences to empty dict
     occ = {}
     # loop through arr
+
     for i in range(len(arr)):
         # loop from current number to the end
         for j in range(i + 1, len(arr)):
@@ -19,6 +20,7 @@ def countPairs(arr, k):
                     elif occ[arr[j]] == arr[i]:
                         # continue
                         continue
+
                 # increment count
                 count += 1
                 # set arr[i] and arr[j] in occ
