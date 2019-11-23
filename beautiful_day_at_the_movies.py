@@ -19,7 +19,7 @@ def beautifulDays(i, j, k):
         # if diff modulo k is zero
         if diff % k == 0:
             # increment count
-            count++
+            count += 1
         # increment i
         i += 1
     # return count
