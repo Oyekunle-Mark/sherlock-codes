@@ -4,7 +4,7 @@ def reverseInts(n):
     # reverse the string
     reversed_n = str_n[::-1]
     # return the int representation
-    return int(reverseInts)
+    return int(reversed_n)
 
 
 def beautifulDays(i, j, k):
@@ -24,3 +24,6 @@ def beautifulDays(i, j, k):
         i += 1
     # return count
     return count
+
+
+print(beautifulDays(20, 23, 6))
