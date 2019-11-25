@@ -3,6 +3,7 @@ def saveThePrisoner(n, m, s):
     start = 0
     # set a variable chair to s
     chair = s
+
     # loop while start is less than m minus one
     while start < m - 1:
         # check if chair equals n
@@ -17,6 +18,7 @@ def saveThePrisoner(n, m, s):
         chair += 1
         # increment start
         start += 1
+
     # return chair
     return chair
 
