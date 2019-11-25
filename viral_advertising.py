@@ -5,6 +5,7 @@ def viralAdvertising(n):
     shared = 5
     # initialize a variable days to zero
     days = 0
+
     # loop while days is less than n
     while days < n:
         # increment liked by the floor division of shared and 2
@@ -13,6 +14,7 @@ def viralAdvertising(n):
         shared = (shared // 2) * 3
         # increment days
         days += 1
+
     # return liked
     return liked
 
