@@ -1,0 +1,2 @@
+def viralAdvertising(n):
+    pass
