@@ -8,7 +8,7 @@ def saveThePrisoner(n, m, s):
         # check if modulo of s plus m minus one and n is zero
         if (s + m - 1) % n == 0:
             # return s
-            return s
+            return n
         # otherwise
         else:
             # return modulo of s plus m minus one and n
