@@ -11,5 +11,10 @@ def viralAdvertising(n):
         liked += shared % 2
         # set shared to floor division of shared and 2 times three
         shared = (shared % 2) * 3
+        # increment days
+        days += 1
     # return liked
     return liked
+
+
+print(viralAdvertising(3))
