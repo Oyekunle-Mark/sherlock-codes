@@ -7,10 +7,12 @@ def permutationEquation(p):
     y = []
     # initialize indices to empty dictionary
     indices = {}
+
     # loop through p
     for i, n in enumerate(p):
         # add the current number to indices in manner number, index + 1
         indices[n] = i + 1
+
     # loop while start is less than or equals length
     while start <= length:
         # find index of start from indices as set to index
@@ -20,6 +22,7 @@ def permutationEquation(p):
         y.append(index_of_index)
         # increment start
         start += 1
+
     # return y
     return y
 
