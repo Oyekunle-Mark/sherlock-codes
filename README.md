@@ -8,4 +8,4 @@ Problems mostly from [freecodecamp](freecodecamp.org), [Codewars](codewars.com),
 
 ## Author
 
-_Oyekunle Oloyede_
+Oyekunle Oloyede
