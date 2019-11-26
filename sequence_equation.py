@@ -18,5 +18,12 @@ def permutationEquation(p):
         # find the index of index itself and append to y
         index_of_index = indices[index]
         y.append(index_of_index)
+        # increment start
+        start += 1
     # return y
     return y
+
+
+print(permutationEquation([5, 2, 1, 3, 4]))
+print(permutationEquation([2, 3, 1]))
+print(permutationEquation([4, 3, 5, 1, 2]))
