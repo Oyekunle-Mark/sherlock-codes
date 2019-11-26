@@ -1,0 +1,2 @@
+def permutationEquation(p):
+    pass
