@@ -3,8 +3,6 @@ def permutationEquation(p):
     length = len(p)
     # set start to 1
     start = 1
-    # initialize y to empty list
-    y = []
     # initialize indices to empty dictionary
     indices = {}
 
@@ -13,18 +11,14 @@ def permutationEquation(p):
         # add the current number to indices in manner number, index + 1
         indices[n] = i + 1
 
-    # loop while start is less than or equals length
-    while start <= length:
-        # find index of start from indices as set to index
-        index = indices[start]
-        # find the index of index itself and append to y
-        index_of_index = indices[index]
-        y.append(index_of_index)
-        # increment start
-        start += 1
+    # create a list y of length length
 
+    # loop while start is less than or equals length
+        # find index of start from indices as set to index
+        # find the index of index itself
+        # place index of index at index start - 1 of y
+        # increment start
     # return y
-    return y
 
 
 print(permutationEquation([5, 2, 1, 3, 4]))
