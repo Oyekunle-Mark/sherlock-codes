@@ -12,13 +12,19 @@ def permutationEquation(p):
         indices[n] = i + 1
 
     # create a list y of length length
-
+    y = [None] * length
     # loop while start is less than or equals length
+    while start <= length:
         # find index of start from indices as set to index
+        index = indices[start]
         # find the index of index itself
+        index_of_index = indices[index]
         # place index of index at index start - 1 of y
+        y[start - 1] = index_of_index
         # increment start
+        start += 1
     # return y
+    return y
 
 
 print(permutationEquation([5, 2, 1, 3, 4]))
