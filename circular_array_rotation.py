@@ -6,6 +6,7 @@ def circularArrayRotation(a, k, queries):
     d = deque(a)
     # initialize rotation_count to zero
     rotation_count = 0
+
     # loop while rotation_count is less than k
     while rotation_count < k:
         # pop from the deque
@@ -14,14 +15,17 @@ def circularArrayRotation(a, k, queries):
         d.appendleft(item)
         # increment rotation_count
         rotation_count += 1
+
     # set length to the length of queries
     length = len(queries)
     # create an array of length length
     indices = [None] * length
+
     # loop through queries
     for i, n in enumerate(queries):
         # place item at index to new array
         indices[i] = d[n]
+
     # return new array
     return indices
 
