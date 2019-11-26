@@ -13,6 +13,7 @@ def permutationEquation(p):
 
     # create a list y of length length
     y = [None] * length
+
     # loop while start is less than or equals length
     while start <= length:
         # find index of start from indices as set to index
@@ -23,6 +24,7 @@ def permutationEquation(p):
         y[start - 1] = index_of_index
         # increment start
         start += 1
+
     # return y
     return y
 
