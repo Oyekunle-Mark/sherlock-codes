@@ -19,11 +19,18 @@ class Solution:
 
     def getHeight(self, root):
         # initialize stack to empty list
+        stack = []
         # push the root to the stack
+        stack.append(root)
         # loop while stack is not empty
+        while len(stack) > 0:
             # pop the stack
+            node = stack.pop()
             # if the popped left is not None
+            if node.left is not None:
                 # call getHeight on it passing it left
+                self.getHeight(node.left)
             # if the popped right is not None
+            if node.right is not None:
                 # call getHeight on it passing it right
-        pass
+                self.getHeight(node.right)
