@@ -22,14 +22,17 @@ class Solution:
         leftNodes = 0
         # initialize rightNodes to zero
         rightNodes = 0
+
         # check if root.left is not None
         if root.left is not None:
             # increment leftNodes by 1 and sum the recursive call to getHeight
             leftNodes = 1 + self.getHeight(root.left)
+
         # check if root.right is not None
         if root.right is not None:
             # increment rightNodes by 1 and sum the recursive call to getHeight
             rightNodes = 1 + self.getHeight(root.right)
+
         # return the max of max of leftNodes and rightNodes
         return max(leftNodes, rightNodes)
 
