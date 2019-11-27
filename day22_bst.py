@@ -18,23 +18,29 @@ class Solution:
         return root
 
     def getHeight(self, root):
-        # initialize stack to empty list
-        stack = []
-        print(root.data)
-        # push the root to the stack
-        stack.append(root)
-        # loop while stack is not empty
-        while len(stack) > 0:
-            # pop the stack
-            node = stack.pop()
-            # if the popped left is not None
-            if node.left is not None:
-                # call getHeight on it passing it left
-                self.getHeight(node.left)
-            # if the popped right is not None
-            if node.right is not None:
-                # call getHeight on it passing it right
-                self.getHeight(node.right)
+        # initialize leftNode to zero
+        leftNode = 0
+        # initialize rightNode to zero
+        rightNode = 0
+        # check if root.left is not None
+        if root.left is not None:
+            # increment leftNode by 1 and sum the recursive call to getHeight
+            leftNode = 1 + self.getHeight(root.left)
+        # check if root.right is not None
+        if root.right is not None:
+            # increment rightNode by 1 and sum the recursive call to getHeight
+            rightNode = 1 + self.getHeight(root.right)
+        # return the max of max of leftNode and rightNode
+        return max(leftNode, rightNode)
+
+        # print(root.data)
+        # if root.left is not None:
+        #     # call getHeight on it passing it left
+        #     self.getHeight(root.left)
+        # # if the popped right is not None
+        # if root.right is not None:
+        #     # call getHeight on it passing it right
+        #     self.getHeight(root.right)
 
 
 myTree = Solution()
@@ -45,4 +51,4 @@ nodes = [3, 5, 2, 1, 4, 6, 7]
 for node in nodes:
     root = myTree.insert(root, node)
 
-myTree.getHeight(root)
+print(myTree.getHeight(root))
