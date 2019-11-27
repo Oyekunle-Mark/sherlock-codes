@@ -33,15 +33,6 @@ class Solution:
         # return the max of max of leftNodes and rightNodes
         return max(leftNodes, rightNodes)
 
-        # print(root.data)
-        # if root.left is not None:
-        #     # call getHeight on it passing it left
-        #     self.getHeight(root.left)
-        # # if the popped right is not None
-        # if root.right is not None:
-        #     # call getHeight on it passing it right
-        #     self.getHeight(root.right)
-
 
 myTree = Solution()
 root = None
