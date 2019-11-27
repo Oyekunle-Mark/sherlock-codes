@@ -18,20 +18,20 @@ class Solution:
         return root
 
     def getHeight(self, root):
-        # initialize leftNode to zero
-        leftNode = 0
-        # initialize rightNode to zero
-        rightNode = 0
+        # initialize leftNodes to zero
+        leftNodes = 0
+        # initialize rightNodes to zero
+        rightNodes = 0
         # check if root.left is not None
         if root.left is not None:
-            # increment leftNode by 1 and sum the recursive call to getHeight
-            leftNode = 1 + self.getHeight(root.left)
+            # increment leftNodes by 1 and sum the recursive call to getHeight
+            leftNodes = 1 + self.getHeight(root.left)
         # check if root.right is not None
         if root.right is not None:
-            # increment rightNode by 1 and sum the recursive call to getHeight
-            rightNode = 1 + self.getHeight(root.right)
-        # return the max of max of leftNode and rightNode
-        return max(leftNode, rightNode)
+            # increment rightNodes by 1 and sum the recursive call to getHeight
+            rightNodes = 1 + self.getHeight(root.right)
+        # return the max of max of leftNodes and rightNodes
+        return max(leftNodes, rightNodes)
 
         # print(root.data)
         # if root.left is not None:
