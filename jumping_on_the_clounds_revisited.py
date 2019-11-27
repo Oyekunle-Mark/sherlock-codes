@@ -21,3 +21,7 @@ def jumpingOnClouds(c, k):
             break
     # return energy
     return energy
+
+
+print(jumpingOnClouds([0, 0, 1, 0], 2))
+print(jumpingOnClouds([0, 0, 1, 0, 0, 1, 1, 0], 2))
