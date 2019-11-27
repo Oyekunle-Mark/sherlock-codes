@@ -18,5 +18,12 @@ class Solution:
         return root
 
     def getHeight(self, root):
-        # Write your code here
+        # initialize stack to empty list
+        # push the root to the stack
+        # loop while stack is not empty
+            # pop the stack
+            # if the popped left is not None
+                # call getHeight on it passing it left
+            # if the popped right is not None
+                # call getHeight on it passing it right
         pass
