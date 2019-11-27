@@ -5,6 +5,7 @@ def jumpingOnClouds(c, k):
     length = len(c)
     # initialize energy to 100
     energy = 100
+
     # while True
     while True:
         # index is index plus k modulo length
@@ -19,6 +20,7 @@ def jumpingOnClouds(c, k):
         if index == 0:
             # break
             break
+
     # return energy
     return energy
 
