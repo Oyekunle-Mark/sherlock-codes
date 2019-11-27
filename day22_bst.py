@@ -20,6 +20,7 @@ class Solution:
     def getHeight(self, root):
         # initialize stack to empty list
         stack = []
+        print(root.data)
         # push the root to the stack
         stack.append(root)
         # loop while stack is not empty
@@ -34,3 +35,14 @@ class Solution:
             if node.right is not None:
                 # call getHeight on it passing it right
                 self.getHeight(node.right)
+
+
+myTree = Solution()
+root = None
+
+nodes = [3, 5, 2, 1, 4, 6, 7]
+
+for node in nodes:
+    root = myTree.insert(root, node)
+
+myTree.getHeight(root)
