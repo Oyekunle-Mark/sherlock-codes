@@ -6,17 +6,15 @@ def findDigits(n):
 
     # loop through inp
     for c in inp:
-        # if character is zero
-        if c == '0':
-            # continue
-            continue
+        # check if c is not '0'
+        if c != '0':
+            # convert the character to an int
+            i = int(c)
 
-        # convert the character to an int
-        i = int(c)
-        # if n modulo character is 0
-        if n % i == 0:
-            # increment count
-            count += 1
+            # if n modulo character is 0
+            if n % i == 0:
+                # increment count
+                count += 1
 
     # return count
     return count
