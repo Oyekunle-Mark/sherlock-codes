@@ -1,0 +1,2 @@
+def extraLongFactorials(n):
+    pass
