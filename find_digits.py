@@ -1,0 +1,2 @@
+def findDigits(n):
+    pass
