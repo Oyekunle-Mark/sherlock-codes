@@ -17,3 +17,8 @@ def findDigits(n):
             count += 1
     # return count
     return count
+
+
+print(findDigits(111))
+print(findDigits(12))
+print(findDigits(1012))
