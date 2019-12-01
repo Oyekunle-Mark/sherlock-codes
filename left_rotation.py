@@ -2,6 +2,15 @@ from collections import deque
 
 
 def rotLeft(a, d):
+    """Performs a left rotation on a list(first argument) d number of times.
+
+    Arguments:
+        a {list} -- the list to be rotated
+        d {int} -- the number of times to perform the left rotation
+
+    Returns:
+        deque -- a deque(created from a copy of a) rotated d number of times
+    """
     # create a deque d from list a
     deq = deque(a)
     # initialize num to zero
