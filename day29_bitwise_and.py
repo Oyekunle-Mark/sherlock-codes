@@ -14,8 +14,14 @@ def find_combinations(n):
 
 
 def bit_and(n, k):
-    # return possible combo
-    return find_combinations(n)
+    # call find_combinations to get combo
+    # initialize ands to empty set
+    # loop through combo
+        # loop through items in set at current index
+            # find the bitwise and of both values
+            # add it to ands
+    # return max of combo
+    pass
 
 
 print(bit_and(5, 2))
