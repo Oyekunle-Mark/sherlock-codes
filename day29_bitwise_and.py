@@ -15,13 +15,20 @@ def find_combinations(n):
 
 def bit_and(n, k):
     # call find_combinations to get combo
+    combo = find_combinations(n)
     # initialize ands to empty set
+    ands = set()
     # loop through combo
+    for A in combo:
         # loop through items in set at current index
+        for B in combo[A]:
             # find the bitwise and of both values
-            # add it to ands
+            bit_and = A & B
+            # add it to ands if less than k
+            if bit_and < k:
+                ands.add(bit_and)
     # return max of combo
-    pass
+    return max(ands)
 
 
 print(bit_and(5, 2))
