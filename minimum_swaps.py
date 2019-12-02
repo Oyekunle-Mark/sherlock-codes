@@ -15,3 +15,8 @@ def minimumSwaps(arr):
         # swap item at min_index with item at current index
         arr[min_index], arr[i] = arr[i], arr[min_index]
     pass
+
+
+arr = [7, 1, 3, 2, 4, 5, 6]
+minimumSwaps(arr)
+print(arr)
