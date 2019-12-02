@@ -9,7 +9,7 @@ def minimumSwaps(arr):
     # loop through arr to length of arr plus one
     for i, n in enumerate(arr):
         # if current value is out of place
-        if arr[i] != i + 1:
+        if arr[i] > i + 1:
             # save current value in temp
             temp = arr[i]
             # get the index of the correct value from indices
@@ -20,6 +20,11 @@ def minimumSwaps(arr):
             arr[index] = temp
             # increment swaps
             swaps += 1
+            # update indices
+            # update the index of the current value
+            indices[i + 1] = i
+            # update the index of the value swapped
+            indices[temp] = index
     # return swaps
     return swaps
 
