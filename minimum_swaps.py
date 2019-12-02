@@ -3,6 +3,7 @@ def minimumSwaps(arr):
     # try to implement a plain selection sort
 
     # set count to zero
+    count = 0
     # loop for all items in arr
     for i in range(len(arr)):
         # set min_index to current index
@@ -14,9 +15,11 @@ def minimumSwaps(arr):
                 # set min_index to current index
                 min_index = j
         # check to see if min_index is not equal i
+        if min_index != i:
             # swap item at min_index with item at current index
             arr[min_index], arr[i] = arr[i], arr[min_index]
             # increment count
+            count += 1
     pass
 
 
