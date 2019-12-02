@@ -1,4 +1,15 @@
 def minimumSwaps(arr):
+    # initialize indices to an empty dict
+    # initialize swaps to zero
+    # loop through the arr and save the index of each value in indices
+    # loop through arr from one to length of arr plus one
+        # if current value is out of place
+            # save current value in temp
+            # get the index of the correct value from indices
+            # place correct value in the current index
+            # place current value in the index of from dict
+            # increment zero
+    # return swaps
     pass
 
 
