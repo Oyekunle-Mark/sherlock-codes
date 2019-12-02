@@ -2,6 +2,7 @@ def minimumSwaps(arr):
     # Which sorting algorithm takes minimum number of swaps?
     # try to implement a plain selection sort
 
+    # set count to zero
     # loop for all items in arr
     for i in range(len(arr)):
         # set min_index to current index
@@ -12,8 +13,10 @@ def minimumSwaps(arr):
             if arr[j] < arr[min_index]:
                 # set min_index to current index
                 min_index = j
-        # swap item at min_index with item at current index
-        arr[min_index], arr[i] = arr[i], arr[min_index]
+        # check to see if min_index is not equal i
+            # swap item at min_index with item at current index
+            arr[min_index], arr[i] = arr[i], arr[min_index]
+            # increment count
     pass
 
 
