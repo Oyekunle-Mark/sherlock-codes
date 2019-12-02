@@ -3,10 +3,12 @@ def minimumSwaps(arr):
     indices = {}
     # initialize swaps to zero
     swaps = 0
+
     # loop through the arr and save the index of each value in indices
     for i, n in enumerate(arr):
         # save as value/index pair
         indices[n] = i
+
     # loop through arr with index and value
     for i, n in enumerate(arr):
         # if current value is out of place
@@ -26,6 +28,7 @@ def minimumSwaps(arr):
             indices[i + 1] = i
             # update the index of the value swappep
             indices[temp] = index
+
     # return swaps
     return swaps
 
