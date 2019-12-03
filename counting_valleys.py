@@ -5,14 +5,14 @@ def countingValleys(n, s):
     valleys = 0
     # loop through the steps in s
     for step in s:
-        # if current step is an uphill one
-        if step == 'U':
-            # increment level by one
-            level += 1
-        # if current step is a downhill one
-        else:
+        # if current step is an downhill one
+        if step == 'D':
             # decrement level by one
             level -= 1
+        # if current step is a uphill one and valley is less than zero
+        elif step == 'U' and valleys < 0:
+            # increment level by one
+            level += 1
         # if level equals zero
         if level == 0:
             # increment valleys by one
