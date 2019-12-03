@@ -19,3 +19,6 @@ def countingValleys(n, s):
             valleys += 1
     # return valleys
     return valleys
+
+
+print(countingValleys(8, "UDDDUDUU"))
