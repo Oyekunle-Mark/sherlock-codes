@@ -13,7 +13,7 @@ def countingValleys(n, s):
         elif step == 'D':
             # decrement level by one
             level -= 1
-        # if level equals zero
+        # if level equals zero and last step was uphill
         if level == 0 and step == 'U':
             # increment valleys by one
             valleys += 1
