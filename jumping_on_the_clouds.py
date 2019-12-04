@@ -7,7 +7,7 @@ def jumpingOnClouds(c):
     index = 0
     # will run in O(n) time
     # while index is less than length of c
-    while index < len(c):
+    while index < len(c) - 1:
         # must avoid list items that are 0's
         # should jump 2 steps forward if there are two consecutive 1's
         # if the next item is 1 or the next two items are 0's
@@ -22,3 +22,7 @@ def jumpingOnClouds(c):
         jump += 1
     # return the number of jumps
     return jump
+
+
+print(jumpingOnClouds([0, 0, 1, 0, 0, 1, 0]))
+print(jumpingOnClouds([0, 0, 0, 0, 1, 0]))
