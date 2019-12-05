@@ -1,3 +1,15 @@
+def count(words):
+    ret = {}
+
+    for key, value in ret.items():
+        if key in ret:
+            ret[key] += 1
+        else:
+            ret[key] = 1
+
+    return ret
+
+
 def checkMagazine(magazine, note):
     # checks if magazine contains the same words in note
     # words are case sensitive
@@ -10,8 +22,8 @@ def checkMagazine(magazine, note):
     note_count = count(note)
 
     # loop through the key, value pair in note_count
-        # check if key is in mag_count
-            # check if value of key in mag_count is up to current value
-            # otherwise print no and break
-        # otherwise print no and break
+    # check if key is in mag_count
+    # check if value of key in mag_count is up to current value
+    # otherwise print no and break
+    # otherwise print no and break
     pass
