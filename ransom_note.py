@@ -25,8 +25,19 @@ def checkMagazine(magazine, note):
     note_count = count(note)
 
     # loop through the key, value pair in note_count
-    # check if key is in mag_count
-    # check if value of key in mag_count is up to current value
-    # otherwise print no and break
-    # otherwise print no and break
-    pass
+    for key, value in note_count.items():
+        # check if key is in mag_count
+        if key in mag_count:
+            # check if value of key in mag_count is up to current value
+            if mag_count[key] >= value:
+                continue
+            # otherwise print no and break
+            else:
+                print("No")
+                break
+         # otherwise print no and break
+        else:
+            print("No")
+            break
+
+    print("Yes")
