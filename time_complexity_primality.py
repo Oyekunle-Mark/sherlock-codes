@@ -1,0 +1,2 @@
+def primality(n):
+    pass
