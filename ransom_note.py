@@ -10,7 +10,7 @@ def count(words):
     return ret
 
 
-print(count(["give", "me", "one", "one", "One", "grand", "today", "night"]))
+# print(count(["give", "me", "one", "one", "One", "grand", "today", "night"]))
 
 
 def checkMagazine(magazine, note):
@@ -31,13 +31,19 @@ def checkMagazine(magazine, note):
             # check if value of key in mag_count is up to current value
             if mag_count[key] >= value:
                 continue
-            # otherwise print no and break
+            # otherwise print no and return
             else:
                 print("No")
-                break
-         # otherwise print no and break
+                return
+         # otherwise print no and return
         else:
             print("No")
-            break
+            return
 
     print("Yes")
+
+
+checkMagazine(["give", "me", "one", "grand", "today", "night"],
+              ["give", "one", "grand", "today"])
+checkMagazine(["two", "times", "three", "is", "not", "four"],
+              ["two", "times", "two", "is", "four"])
