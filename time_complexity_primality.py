@@ -9,11 +9,18 @@ def primality(n):
     # use the sqrt method from the math module to find the sqrt of a number
 
     # if n is the number one
+    if n == 1:
         # return not prime
+        return "Not prime"
     # initialize upper to the square root of n
+    upper = sqrt(n)
     # initialize lower to two
-    # loop while lower is less than upper
+    lower = two
+    # loop while lower is less than or equal upper
+    while lower <= upper:
         # if n modulo lower equals zero
+        if n % lower == 0:
             # return not prime
+            return "Not prime"
     # return prime
-    pass
+    return "Prime"
