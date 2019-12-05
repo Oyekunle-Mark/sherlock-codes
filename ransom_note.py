@@ -1,13 +1,16 @@
 def count(words):
     ret = {}
 
-    for key, value in ret.items():
-        if key in ret:
-            ret[key] += 1
+    for item in words:
+        if item in ret:
+            ret[item] += 1
         else:
-            ret[key] = 1
+            ret[item] = 1
 
     return ret
+
+
+print(count(["give", "me", "one", "one", "One", "grand", "today", "night"]))
 
 
 def checkMagazine(magazine, note):
