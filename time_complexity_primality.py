@@ -15,12 +15,20 @@ def primality(n):
     # initialize upper to the square root of n
     upper = sqrt(n)
     # initialize lower to two
-    lower = two
+    lower = 2
     # loop while lower is less than or equal upper
     while lower <= upper:
         # if n modulo lower equals zero
         if n % lower == 0:
             # return not prime
             return "Not prime"
+        # increment lower by 1
+        lower += 1
     # return prime
     return "Prime"
+
+
+print(primality(3))
+print(primality(12))
+print(primality(15))
+print(primality(7))
