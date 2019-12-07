@@ -7,11 +7,23 @@
 
  function isMatched(arr) {
      // set first to zero
-     // set last to the length of arr
+     let first = 0
+     // set last to the length of arr minus one
+     let last = len(arr) - 1
      // loop while first is less than last
+     while (first < last) {
         // if first of arr does not equals last of arr
+        if (arr[first] !== arr[last]) {
             // return false
+            return false
+        }
+        // increment first
+        first++
+        // decrement last
+        last--
+     }
     // return true
+    return true
  }
 
 function balancedBrackets(string) {
