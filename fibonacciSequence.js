@@ -13,6 +13,7 @@ function fibonacci(n) {
   let sequence = [];
   // initialize count to zero
   let count = 0;
+
   // if n is 1
   if (n === 1) {
     // assign sequence to an array with a zero
@@ -33,8 +34,9 @@ function fibonacci(n) {
     // append the sum of index count - 1 and count - 2 of sequence to sequence
     sequence.push(sequence[count - 1] + sequence[count - 2]);
     // increment count
-    count++
+    count++;
   }
+
   // return sequence
   return sequence;
 }
