@@ -52,7 +52,11 @@ function balancedBrackets(string) {
   return isMatched(brackets);
 }
 
-console.log(balancedBrackets('(([]))'));
+console.log(
+  balancedBrackets(
+    'I (wa)n{t to buy a on}esie[…] b(u{[t] kno}w it) won’t suit me.',
+  ),
+);
 console.log(balancedBrackets('({[]})'));
 console.log(balancedBrackets('this(si{[]onw })'));
 console.log(balancedBrackets('{{||[]||}}'));
