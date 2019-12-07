@@ -18,4 +18,18 @@ function balancedBrackets(string) {
     '}': '{',
     '|': '|',
   };
+
+  // loop through the string
+    // if current character in "([{"
+        // push it to the stack
+    // otherwise, if character in ")]}"
+        // pop an item from the stack
+        // if item popped is equal to mapBrackets of character
+            // continue
+        // otherwise,
+            // return false
+
+  // if stack is not empty
+    // return false
+  // return true
 }
