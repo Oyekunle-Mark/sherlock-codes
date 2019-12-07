@@ -10,7 +10,7 @@
 function threeNumberSum(arr, target) {
   const sums = [];
 
-  arr = arr.slice(arr.length // 2,).sort((a, b) => a - b)
+  arr = arr.sort((a, b) => a - b);
 
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
