@@ -50,3 +50,7 @@ function balancedBrackets(string) {
   // return true
   return true;
 }
+
+console.log(balancedBrackets('(([]))'));
+console.log(balancedBrackets('({[]})'));
+console.log(balancedBrackets('this(si{[]onw })'));
