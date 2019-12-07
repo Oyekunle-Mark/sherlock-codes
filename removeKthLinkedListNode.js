@@ -18,25 +18,43 @@
  */
 
 function removeKthLinkedListNode(head, k) {
-    let len = 0
-    let node = head
-    let nodeArray = []
+  // initialize the length to zero
+  let len = 0;
+  // set node to the head
+  let node = head;
+  // nodeArray will hold the nodes in the linked list
+  let nodeArray = [];
 
-    while (node !== null) {
-        len++
-        nodeArray.push(node)
-        node =node.next
-    }
+  // first find the nodes in the linked list
+  // push each node to the nodeArray as you visit each
+  while (node !== null) {
+    // push the current node to the nodeArray
+    nodeArray.push(node);
+    // set node to the next
+    node = node.next;
+    // increment length
+    len++;
+  }
 
-    if (k > len) {
-        return head
-    }
+  // if k is greater than length
+  if (k > len) {
+    // return the linked list unchanged
+    return head;
+  }
 
-    if (len - k === 0) {
-        return nodeArray[len - k + 1]
-    }
+  // WHERE: node marked for deletion if indexed "len - k"
 
-    nodeArray[len - k - 1].next = nodeArray[len - k + 1]
+  // if the kth node from the tail is the current head
+  // i.e, if the node to be removed is the current head
+  if (len - k === 0) {
+    // return the next node as the head
+    return nodeArray[len - k + 1];
+  }
+  // otherwise, remove the kth node from the tail
+  // set the node before the marked node to point to
+  // the node after the marked node
+  nodeArray[len - k - 1].next = nodeArray[len - k + 1];
 
-    return nodeArray[0]
+  // return the head of nodeArray
+  return nodeArray[0];
 }
