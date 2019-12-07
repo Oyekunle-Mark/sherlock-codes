@@ -5,6 +5,15 @@
  * The function accepts STRING string as parameter.
  */
 
+ function isMatched(arr) {
+     // set first to zero
+     // set last to the length of arr
+     // loop while first is less than last
+        // if first of arr does not equals last of arr
+            // return false
+    // return true
+ }
+
 function balancedBrackets(string) {
   // should determine of the string contains matched bracket set or not
   // will have to loop through the whole string to check
