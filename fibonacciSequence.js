@@ -10,7 +10,7 @@ function fibonacci(n) {
   // Number ranges between 1 <= n <= 10
 
   // initialize sequence to an empty array
-  const sequence = [];
+  let sequence = [];
   // initialize count to zero
   let count = 0;
   // if n is 1
@@ -30,9 +30,14 @@ function fibonacci(n) {
 
   // loop while count of sequence is less than n
   while (count < n) {
-    // append the sum of index n - 1 and n - 2 of sequence to sequence
-    sequence.push(sequence[n - 1] + sequence[n - 2]);
+    // append the sum of index count - 1 and count - 2 of sequence to sequence
+    sequence.push(sequence[count - 1] + sequence[count - 2]);
+    // increment count
+    count++
   }
   // return sequence
   return sequence;
 }
+
+console.log(fibonacci(4));
+console.log(fibonacci(10));
