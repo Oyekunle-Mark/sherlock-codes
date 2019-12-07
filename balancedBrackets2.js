@@ -20,16 +20,33 @@ function balancedBrackets(string) {
   };
 
   // loop through the string
+  for (let i = 0; i < string.length; i++) {
     // if current character in "([{"
-        // push it to the stack
+    if ('([{'.includes(string[i])) {
+      // push it to the stack
+      stack.push(string[i]);
+    }
     // otherwise, if character in ")]}"
-        // pop an item from the stack
-        // if item popped is equal to mapBrackets of character
-            // continue
-        // otherwise,
-            // return false
-
+    else if (')]}'.includes(string[i])) {
+      // pop an item from the stack
+      const item = stack.pop();
+      // if item popped is equal to mapBrackets of character
+      if (item === mapBrackets[string[i]]) {
+        // continue
+        continue;
+      }
+      // otherwise,
+      else {
+        // return false
+        return false;
+      }
+    }
+  }
   // if stack is not empty
+  if (stack.length !== 0) {
     // return false
+    return false;
+  }
   // return true
+  return true;
 }
