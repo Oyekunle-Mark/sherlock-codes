@@ -50,6 +50,7 @@ function removeKthLinkedListNode(head, k) {
     // return the next node as the head
     return nodeArray[len - k + 1];
   }
+  
   // otherwise, remove the kth node from the tail
   // set the node before the marked node to point to
   // the node after the marked node
