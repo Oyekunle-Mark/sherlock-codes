@@ -6,14 +6,21 @@
  */
 
 function isMatched(arr) {
+  const mapBrackets = {
+    '}': '{',
+    ')': '(',
+    ']': '[',
+    '|': '|',
+  };
+
   // set first to zero
   let first = 0;
   // set last to the length of arr minus one
   let last = arr.length - 1;
   // loop while first is less than last
   while (first < last) {
-    // if first of arr does not equals last of arr
-    if (arr[first] != arr[last]) {
+    // if first of arr does not have a closing tag at last of arr
+    if (arr[first] !== mapBrackets[arr[last]]) {
       // return false
       return false;
     }
@@ -32,21 +39,12 @@ function balancedBrackets(string) {
   // will take O(n) time
   // The bracket set are "{}", "()", "[]" and "||"
 
-  const brackets = [];
-  const bracketSet = {
-    ')': 1,
-    ']': 1,
-    '}': 1,
-    '|': 1,
-    '(': 1,
-    '[': 1,
-    '{': 1,
-  };
+  let brackets = [];
 
   // loop through the string
   for (let i = 0; i < string.length; i++) {
     // if current character in bracketSet
-    if (bracketSet[string[i]]) {
+    if ('()[]{}|'.includes(string[i])) {
       brackets.push(string[i]);
     }
   }
