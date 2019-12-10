@@ -7,7 +7,13 @@ function migratoryBirds(arr) {
   const findMostFrequencyForNumberOneToFive = ar => {
     const mostFrequent = [];
 
-    const range = new Map([[1, 0], [2, 0], [3, 0], [4, 0], [5, 0]]);
+    const range = new Map([
+      [1, 0],
+      [2, 0],
+      [3, 0],
+      [4, 0],
+      [5, 0],
+    ]);
 
     ar.map(num => range.set(num, range.get(num) + 1));
 
