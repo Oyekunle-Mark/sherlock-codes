@@ -5,4 +5,26 @@ def freqQuery(queries):
     # use another dict to store frequency to make lookup O(n)
     # store the result of frequency lookup in an array to be returned
     # at the tail of the program
+
+    # initialize lookup to empty arr
+    # initialize op to empty dict
+    # loop through queries as command/value pair
+        # if command is a 1
+            # check if value is in op
+                # increment the value of value in op
+            # otherwise
+                # add value in op and set to 1
+        # if command is a 2
+            # check if value is in op
+                # if value of value in op greater than zero
+                    # decrement the value of value in op
+        # otherwise
+            # check if value is in freq dict
+                # if value of value in freq dict is greater than zero
+                    # append 1 to lookup
+                # otherwise
+                    # append zero to lookup
+            # otherwise
+                # append zero to lookup
+    # return lookup
     pass
