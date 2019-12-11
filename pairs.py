@@ -20,3 +20,6 @@ def pairs(k, arr):
             count += 1
     # return count
     return count
+
+
+print(pairs(2, [1, 5, 3, 4, 2]))
