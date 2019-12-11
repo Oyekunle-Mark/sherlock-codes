@@ -1,4 +1,12 @@
-def upfreq(d, prev, curr):
+def updateFreq(d, prev, curr):
+    # if prev is a zero
+        # add curr to d and set to 1
+    # if value at prev of d is greater than zero
+        # decrement value at prev of d
+    # if curr in d
+        # increment value at curr of d
+    # otherwise,
+        # add curr to d and set to one
     pass
 
 
