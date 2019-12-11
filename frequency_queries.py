@@ -1,13 +1,20 @@
 def updateFreq(d, prev, curr):
     # if prev is a zero
+    if prev == 0:
         # add curr to d and set to 1
+        d[curr] = 1
     # if value at prev of d is greater than zero
+    if d[prev] > 0:
         # decrement value at prev of d
+        d[prev] -= 1
     # if curr in d
+    if curr in d:
         # increment value at curr of d
+        d[curr] += 1
     # otherwise,
+    else:
         # add curr to d and set to one
-    pass
+        d[curr] = 1
 
 
 def freqQuery(queries):
