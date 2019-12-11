@@ -5,11 +5,18 @@ def pairs(k, arr):
     # add k to the number and see if it exists
 
     # initialize count to zero
+    count = 0
     # initialize numbers to empty set
+    numbers = set()
     # loop through arr
+    for item in arr:
         # add the items to numbers
+        numbers.add(item)
     # loop through arr
+    for item in arr:
         # if item plus k is in numbers
+        if item + k in numbers:
             # increment count
+            count += 1
     # return count
-    pass
+    return count
