@@ -85,3 +85,4 @@ def freqQuery(queries):
 
 print(freqQuery([[1, 5], [1, 6], [3, 2], [
       1, 10], [1, 10], [1, 6], [2, 5], [3, 2]]))
+print(freqQuery([[3, 4], [2, 1003], [1, 16], [3, 1]]))
