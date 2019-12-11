@@ -1,8 +1,14 @@
 def updateFreq(d, prev, curr):
     # if prev is a zero
     if prev == 0:
+        # increment curr in d if it exists
+        if curr in d:
+            d[curr] += 1
         # add curr to d and set to 1
-        d[curr] = 1
+        else:
+            d[curr] = 1
+        # return
+        return
     # if value at prev of d is greater than zero
     if d[prev] > 0:
         # decrement value at prev of d
@@ -43,8 +49,8 @@ def freqQuery(queries):
                 op[value] += 1
             # otherwise
             else:
-                # call updateFreq with zero and value
-                updateFreq(freq, 0, value)
+                # call updateFreq with zero and one
+                updateFreq(freq, 0, 1)
                 # add value in op and set to 1
                 op[value] = 1
         # if command is a 2
@@ -75,3 +81,7 @@ def freqQuery(queries):
                 lookup.append(0)
     # return lookup
     return lookup
+
+
+print(freqQuery([[1, 5], [1, 6], [3, 2], [
+      1, 10], [1, 10], [1, 6], [2, 5], [3, 2]]))
