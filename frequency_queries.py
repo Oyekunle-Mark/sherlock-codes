@@ -9,10 +9,12 @@ def updateFreq(d, prev, curr):
             d[curr] = 1
         # return
         return
+
     # if value at prev of d is greater than zero
     if d[prev] > 0:
         # decrement value at prev of d
         d[prev] -= 1
+
     # if curr in d
     if curr in d:
         # increment value at curr of d
@@ -37,6 +39,7 @@ def freqQuery(queries):
     freq = {}
     # initialize lookup to empty arr
     lookup = []
+
     # loop through queries as command/value pair
     for command, value in queries:
         # if command is a 1
@@ -53,6 +56,7 @@ def freqQuery(queries):
                 updateFreq(freq, 0, 1)
                 # add value in op and set to 1
                 op[value] = 1
+
         # if command is a 2
         elif command == 2:
             # check if value is in op
@@ -63,6 +67,7 @@ def freqQuery(queries):
                     updateFreq(freq, op[value], op[value] - 1)
                     # decrement the value of value in op
                     op[value] -= 1
+
         # otherwise
         else:
             # check if value is in freq dict
@@ -79,6 +84,7 @@ def freqQuery(queries):
             else:
                 # append zero to lookup
                 lookup.append(0)
+
     # return lookup
     return lookup
 
