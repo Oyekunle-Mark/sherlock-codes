@@ -18,17 +18,21 @@ def freqQuery(queries):
     # store the result of frequency lookup in an array to be returned
     # at the tail of the program
 
-    # initialize lookup to empty arr
     # initialize op to empty dict
+    # initialize freq to empty dict
+    # initialize lookup to empty arr
     # loop through queries as command/value pair
         # if command is a 1
             # check if value is in op
+                # call updateFreq with prev value and current value
                 # increment the value of value in op
             # otherwise
+                # call updateFreq with zero and value
                 # add value in op and set to 1
         # if command is a 2
             # check if value is in op
                 # if value of value in op greater than zero
+                    # call updateFreq with prev value and current value
                     # decrement the value of value in op
         # otherwise
             # check if value is in freq dict
