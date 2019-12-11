@@ -26,28 +26,52 @@ def freqQuery(queries):
     # at the tail of the program
 
     # initialize op to empty dict
+    op = {}
     # initialize freq to empty dict
+    freq = {}
     # initialize lookup to empty arr
+    lookup = []
     # loop through queries as command/value pair
+    for command, value in queries:
         # if command is a 1
+        if command == 1:
             # check if value is in op
+            if value in op:
                 # call updateFreq with prev value and current value
+                updateFreq(freq, op[value], op[value] + 1)
                 # increment the value of value in op
+                op[value] += 1
             # otherwise
+            else:
                 # call updateFreq with zero and value
+                updateFreq(freq, 0, value)
                 # add value in op and set to 1
+                op[value] = 1
         # if command is a 2
+        elif command == 2:
             # check if value is in op
+            if value in op:
                 # if value of value in op greater than zero
+                if op[value] > 0:
                     # call updateFreq with prev value and current value
+                    updateFreq(freq, op[value], op[value] - 1)
                     # decrement the value of value in op
+                    op[value] -= 1
         # otherwise
+        else:
             # check if value is in freq dict
+            if value in freq:
                 # if value of value in freq dict is greater than zero
+                if freq[value] > 0:
                     # append 1 to lookup
+                    lookup.append(1)
                 # otherwise
+                else:
                     # append zero to lookup
+                    lookup.append(0)
             # otherwise
+            else:
                 # append zero to lookup
+                lookup.append(0)
     # return lookup
-    pass
+    return lookup
