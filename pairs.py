@@ -3,4 +3,13 @@ def pairs(k, arr):
     # can run in O(n) time
     # sorting will be required
     # add k to the number and see if it exists
+
+    # initialize count to zero
+    # initialize numbers to empty set
+    # loop through arr
+        # add the items to numbers
+    # loop through arr
+        # if item plus k is in numbers
+            # increment count
+    # return count
     pass
