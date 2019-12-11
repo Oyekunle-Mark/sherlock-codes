@@ -1,0 +1,2 @@
+def freqQuery(queries):
+    pass
