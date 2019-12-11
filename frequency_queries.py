@@ -1,3 +1,7 @@
+def upfreq(d, prev, curr):
+    pass
+
+
 def freqQuery(queries):
     # performs a set of operations based on input
     # operations are insertion, deletion and frequency read
