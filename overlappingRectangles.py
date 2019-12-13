@@ -14,9 +14,17 @@ Output: 3
 def parseStrArr(attr):
     # first split the string on commas
     # then remove the open and closing brackets
+    attr = attr.replace(')', '').replace('(', '').split(',')
     # next parse the str numbers as int adding them to an array in the process
+    ret = []
+    pos = 0
+
+    while pos < len(attr):
+        ret.append([int(attr[pos], int(attr[pos + 1]))])
+        pos += 2
+
     # return the result
-    pass
+    return ret
 
 
 def OverlappingRectangles(strArr):
