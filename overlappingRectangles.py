@@ -12,6 +12,10 @@ Output: 3
 
 
 def parseStrArr(attr):
+    # first split the string on commas
+    # then remove the open and closing brackets
+    # next parse the str numbers as int adding them to an array in the process
+    # return the result
     pass
 
 
