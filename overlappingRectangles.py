@@ -40,6 +40,9 @@ def findArea(coor):
 # print(findArea([[0, 0], [0, -2], [3, 0], [3, -2]]))
 # print(findArea([[2, -1], [3, -1], [2, 3], [3, 3]]))
 
+def findOverlap(coor):
+    pass
+
 
 def OverlappingRectangles(strArr):
     # first pass the string input to an array of tuples of coordinates
