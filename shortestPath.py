@@ -48,7 +48,11 @@ class Graph:
         self.vertices[v2].add(v1)
 
 
-def buildStr(attr):
+def buildStr(graph, attr):
+    """
+    Parses an input in this format ["4","X","Y","Z","W","X-Y","Y-Z","X-W"]
+    and builds the graph from it
+    """
     pass
 
 
