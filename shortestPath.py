@@ -47,6 +47,9 @@ class Graph:
         self.vertices[v1].add(v2)
         self.vertices[v2].add(v1)
 
+    def shortest_path(self, start, end):
+        pass
+
 
 def buildGraph(graph, attr):
     """
@@ -57,17 +60,23 @@ def buildGraph(graph, attr):
     numOfVert = int(attr[0])
     # get the vertices from a range of 1 to vertices plus one
     vertices = attr[1: numOfVert + 1]
+
     # add all the vertices to the graph
     for vertice in vertices:
         graph.add_vertex(vertice)
+
     # get the edges from range of vertices plus one to the end
     edges = attr[numOfVert + 1:]
+
     # loop through the edges
     for edge in edges:
         # split the edge on '-'
         i, j = edge.split('-')
         # add the edge
         graph.add_edge(i, j)
+
+    # return the vertices
+    return vertices
 
 
 # g = Graph()
