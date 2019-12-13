@@ -133,6 +133,6 @@ def ShortestPath(strArr):
     return path
 
 
-print(ShortestPath(["5", "A", "B", "C", "D",
-                    "F", "A-B", "A-C", "B-C", "C-D", "D-F"]))
-print(ShortestPath(["4", "X", "Y", "Z", "W", "X-Y", "Y-Z", "X-W"]))
+# print(ShortestPath(["5", "A", "B", "C", "D",
+#                     "F", "A-B", "A-C", "B-C", "C-D", "D-F"]))
+# print(ShortestPath(["4", "X", "Y", "Z", "W", "X-Y", "Y-Z", "X-W"]))
