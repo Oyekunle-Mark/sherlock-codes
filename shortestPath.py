@@ -118,6 +118,9 @@ def buildGraph(graph, attr):
 
 
 def ShortestPath(strArr):
+    """
+    Uses the ADTs and parser to build the graph and build path
+    """
     # first, parse the input and represent the data like a graph
     # to find the shortest path, use bfs,
     # will have to define a queue class to use
