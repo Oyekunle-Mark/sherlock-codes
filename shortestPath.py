@@ -129,8 +129,11 @@ def ShortestPath(strArr):
     vertices = buildGraph(graph, strArr)
     # call the shortest path with first and last vertice
     path = graph.shortest_path(vertices[0], vertices[-1])
-    # join the path with dashes
-    path = '-'.join(path)
+
+    # check if there is a shortest path
+    if path != -1:
+        # join the path with dashes
+        path = '-'.join(path)
 
     # return shortest path
     return path
@@ -139,3 +142,6 @@ def ShortestPath(strArr):
 # print(ShortestPath(["5", "A", "B", "C", "D",
 #                     "F", "A-B", "A-C", "B-C", "C-D", "D-F"]))
 # print(ShortestPath(["4", "X", "Y", "Z", "W", "X-Y", "Y-Z", "X-W"]))
+# print(ShortestPath(["2", "First Street", "Third Street"]))
+# print(ShortestPath(["7", "D", "A", "N", "I", "E",
+#                     "L", "B", "D-A", "A-N", "E-B", "E-L"]))
