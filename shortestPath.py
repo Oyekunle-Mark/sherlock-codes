@@ -15,7 +15,7 @@ Output: X-W
 
 class Queue():
     """
-    The queue data structure
+    The Queue ADT
     """
 
     def __init__(self):
@@ -35,7 +35,7 @@ class Queue():
 
 
 class Graph:
-    """The graph ADT"""
+    """The Graph ADT"""
 
     def __init__(self):
         self.vertices = {}
@@ -48,7 +48,7 @@ class Graph:
         self.vertices[v2].add(v1)
 
 
-def buildStr(graph, attr):
+def buildGraph(graph, attr):
     """
     Parses an input in this format ["4","X","Y","Z","W","X-Y","Y-Z","X-W"]
     and builds the graph from it
