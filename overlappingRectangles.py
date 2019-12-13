@@ -11,6 +11,10 @@ Output: 3
 """
 
 
+def parseStrArr(attr):
+    pass
+
+
 def OverlappingRectangles(strArr):
     # first pass the string input to an array of tuples of coordinates
     # second, a helper function that finds the area of rectangles using cartesian coordinate
