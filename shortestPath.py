@@ -128,3 +128,8 @@ def ShortestPath(strArr):
     path = graph.shortest_path(vertices[0], vertices[-1])
 
     return path
+
+
+print(ShortestPath(["5", "A", "B", "C", "D",
+                    "F", "A-B", "A-C", "B-C", "C-D", "D-F"]))
+print(ShortestPath(["4", "X", "Y", "Z", "W", "X-Y", "Y-Z", "X-W"]))
