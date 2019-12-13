@@ -12,6 +12,9 @@ Output: 3
 
 
 def parseStrArr(attr):
+    """
+    Parses the input to an array of coordinate array
+    """
     # first split the string on commas
     # then remove the open and closing brackets
     attr = attr[0].replace(')', '').replace('(', '').split(',')
@@ -32,6 +35,9 @@ def parseStrArr(attr):
 
 
 def findArea(coor):
+    """
+    Finds the area of a rectangle from coordinates
+    """
     # find the length using the first items of the first and last set of coordinates
     length = coor[3][0] - coor[0][0]
     # find breadth using the second item of the first and last coordinates
@@ -41,6 +47,9 @@ def findArea(coor):
 
 
 def findDimension(coor):
+    """
+    Finds the dimensions of the rectangles
+    """
     # find the length using the first items of the first and last set of coordinates
     length = coor[3][0] - coor[0][0]
     # find breadth using the second item of the first and last coordinates
@@ -54,6 +63,9 @@ def findDimension(coor):
 # print(findArea([[2, -1], [3, -1], [2, 3], [3, 3]]))
 
 def findOverlap(coor):
+    """
+    Returns the overlap
+    """
     # find height and length of both rectangles
     l1, b1 = findDimension(coor[0:4])
     l2, b2 = findDimension(coor[4:])
@@ -68,6 +80,9 @@ def findOverlap(coor):
 
 
 def OverlappingRectangles(strArr):
+    """
+    Heavy lifting done here, performs operations.
+    """
     # first pass the string input to an array of tuples of coordinates
     # second, a helper function that finds the area of rectangles using cartesian coordinate
     # third would be to find the area of overlap if it overlaps at all
