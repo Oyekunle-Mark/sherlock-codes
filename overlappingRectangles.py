@@ -27,6 +27,10 @@ def parseStrArr(attr):
     return ret
 
 
+# print(parseStrArr(["(0,0),(5,0),(0,2),(5,2),(2,1),(5,1),(2,-1),(5,-1)"]))
+# print(parseStrArr(["(0,0),(5,0),(0,2),(5,2),(2,1),(5,1),(2,-1),(5,-1)"]))
+
+
 def findArea(coor):
     # find the length using the first items of the first and last set of coordinates
     length = coor[3][0] - coor[0][0]
@@ -34,6 +38,7 @@ def findArea(coor):
     breadth = coor[3][1] - coor[0][1]
     # return the multiplication of the length and breadth
     return abs(length * breadth)
+
 
 def findDimension(coor):
     # find the length using the first items of the first and last set of coordinates
@@ -50,7 +55,17 @@ def findDimension(coor):
 
 def findOverlap(coor):
     # find height and length of both rectangles
-    
+    l1, b1 = findDimension(coor[0:4])
+    l2, b2 = findDimension(coor[4:])
+
+    return l2
+
+
+# print(findOverlap([[0, 0], [0, -2], [3, 0],
+#                    [3, -2], [2, -1], [3, -1], [2, 3], [3, 3]]))
+# print(findOverlap([[0, 0], [5, 0], [0, 2], [
+#       5, 2], [2, 1], [5, 1], [2, -1], [5, -1]]))
+
 
 def OverlappingRectangles(strArr):
     # first pass the string input to an array of tuples of coordinates
@@ -62,4 +77,4 @@ def OverlappingRectangles(strArr):
 
 
 # keep this function call here
-print(OverlappingRectangles(input()))
+# print(OverlappingRectangles(input()))
