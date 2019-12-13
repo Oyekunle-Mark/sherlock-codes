@@ -48,7 +48,7 @@ class Graph:
         self.vertices[v2].add(v1)
 
 
-def parseStrArr(attr):
+def buildStr(attr):
     pass
 
 
