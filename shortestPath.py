@@ -57,12 +57,14 @@ class Graph:
         q.enqueue([start])
         # initialize visited as an empty set
         visited = set()
+
         # loop while queue is not empty
         while q.size() > 0:
             # dequeue the path
             path = q.dequeue()
             # set v to the last item in q
             v = path[-1]
+
             # check if v is not in visited
             if v not in visited:
                 # check if v is the end
@@ -71,6 +73,7 @@ class Graph:
                     return path
                 # add v to visited
                 visited.add(v)
+
                 # loop through vert connected to v
                 for vert in self.vertices[v]:
                     # create a copy of the list
@@ -79,6 +82,7 @@ class Graph:
                     new_path.append(vert)
                     # enqueue the list
                     q.enqueue(new_path)
+
         # return -1 if shortest path not found
         return -1
 
