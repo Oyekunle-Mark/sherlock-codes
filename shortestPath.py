@@ -120,5 +120,11 @@ def ShortestPath(strArr):
     # will have to define a queue class to use
     # find the path and join with - to match the test result.
 
-    # code goes here
-    return strArr
+    # create a graph object
+    graph = Graph()
+    # build the graph and get the vertices returned
+    vertices = buildGraph(graph, strArr)
+    # call the shortest path with first and last vertice
+    path = graph.shortest_path(vertices[0], vertices[-1])
+
+    return path
