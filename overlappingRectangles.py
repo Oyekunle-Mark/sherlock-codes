@@ -28,6 +28,9 @@ def parseStrArr(attr):
 
 
 def findArea(coor):
+    # find the length using the first items of the first and last set of coordinates
+    # find breadth using the second item of the second and third coordinates
+    # return the multiplication of the length and breadth
     pass
 
 
