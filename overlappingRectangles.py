@@ -29,9 +29,11 @@ def parseStrArr(attr):
 
 def findArea(coor):
     # find the length using the first items of the first and last set of coordinates
-    # find breadth using the second item of the second and third coordinates
+    length = coor[3][0] - coor[0][0]
+    # find breadth using the second item of the first and second coordinates
+    breadth = coor[0][1] - coor[1][1]
     # return the multiplication of the length and breadth
-    pass
+    return length * breadth
 
 
 def OverlappingRectangles(strArr):
