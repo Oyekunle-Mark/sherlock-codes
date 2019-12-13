@@ -48,6 +48,21 @@ class Graph:
         self.vertices[v2].add(v1)
 
     def shortest_path(self, start, end):
+        # create a queue
+        # enqueue the start vertice as a list
+        # initialize visited as an empty set
+        # loop while queue is not empty
+            # dequeue the path
+            # set v to the last item in q
+            # check if v is not in visited
+                # check if v is the end
+                    # return the path
+                # add v to visited
+                # loop through vert connected to v
+                    # create a copy of the list
+                    # append current vet to the list
+                    # enqueue the list
+        # return -1 if shortest path not found
         pass
 
 
