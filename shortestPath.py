@@ -14,6 +14,10 @@ Output: X-W
 
 
 class Queue():
+    """
+    The queue data structure
+    """
+
     def __init__(self):
         self.queue = []
 
