@@ -126,7 +126,10 @@ def ShortestPath(strArr):
     vertices = buildGraph(graph, strArr)
     # call the shortest path with first and last vertice
     path = graph.shortest_path(vertices[0], vertices[-1])
+    # join the path with dashes
+    path = '-'.join(path)
 
+    # return shortest path
     return path
 
 
