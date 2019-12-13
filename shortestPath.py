@@ -35,7 +35,7 @@ class Queue():
 
 
 class Graph:
-    """Represent a graph as a dictionary of vertices mapping labels to edges."""
+    """The graph ADT"""
 
     def __init__(self):
         self.vertices = {}
