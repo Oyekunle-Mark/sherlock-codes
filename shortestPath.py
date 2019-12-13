@@ -53,6 +53,12 @@ def buildStr(graph, attr):
     Parses an input in this format ["4","X","Y","Z","W","X-Y","Y-Z","X-W"]
     and builds the graph from it
     """
+    # get the number of vertices
+    # get the vertices from a range of 1 to vertices plus one
+    # get the edges from range of vertices plus one to the end
+    # loop through the edges
+        # split the edge on '-'
+        # add the edge
     pass
 
 
