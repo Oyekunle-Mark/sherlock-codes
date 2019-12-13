@@ -73,8 +73,16 @@ def OverlappingRectangles(strArr):
     # third would be to find the area of overlap if it overlaps at all
     # to do that, it is probably better to define an helper function for that purpose
 
-    pass
+    # parse input
+    inp = parseStrArr(strArr)
+    # find area of first rectangle
+    rect1 = findArea(inp[0:4])
+    # find area of overlap
+    overlap = findOverlap(inp)
+
+    # return ratio of overlap to first rect
+    return rect1 // overlap
 
 
 # keep this function call here
-# print(OverlappingRectangles(input()))
+print(OverlappingRectangles(input()))
