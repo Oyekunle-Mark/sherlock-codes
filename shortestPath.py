@@ -54,12 +54,17 @@ def buildGraph(graph, attr):
     and builds the graph from it
     """
     # get the number of vertices
+    numOfVert = attr[0]
     # get the vertices from a range of 1 to vertices plus one
+    vertices = attr[1: numOfVert + 1]
     # get the edges from range of vertices plus one to the end
+    edges = attr[numOfVert + 1:]
     # loop through the edges
+    for edge in edges:
         # split the edge on '-'
+        i, j = edge.split('-')
         # add the edge
-    pass
+        graph.add_edge(i, j)
 
 
 def ShortestPath(strArr):
