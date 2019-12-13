@@ -48,6 +48,10 @@ class Graph:
         self.vertices[v2].add(v1)
 
 
+def parseStrArr(attr):
+    pass
+
+
 def ShortestPath(strArr):
     # first, parse the input and represent the data like a graph
     # to find the shortest path, use bfs,
