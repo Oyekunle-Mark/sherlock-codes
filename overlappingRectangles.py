@@ -103,7 +103,3 @@ def OverlappingRectangles(strArr):
 
     # return ratio of overlap to first rect
     return rect1 // overlap
-
-
-# keep this function call here
-print(OverlappingRectangles(input()))
