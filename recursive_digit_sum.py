@@ -1,4 +1,8 @@
 def sumDigits(n):
+    # initialize sum to zero
+    # loop through every character in n
+        # add the integer cast of character to sum
+    # return sum as a string
     pass
 
 
