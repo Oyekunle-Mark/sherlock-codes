@@ -12,9 +12,14 @@ def superDigit(n, k):
     # returns the final digit as an integer
 
     # state a base case of if length of n is one
+    if len(n) == 1:
         # return n as an int
+        return int(n)
     # if k is not none
+    if k is not None:
         # assign the concatenation of n, k number of times to n
+        n = n * k
     # call sumDigits on n and save the result in p
+    p = sumDigits(n)
     # return recursive call of superDigit with p
-    pass
+    return superDigit(p)
