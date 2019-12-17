@@ -9,7 +9,7 @@ def sumDigits(n):
     return str(sum)
 
 
-def superDigit(n, k):
+def superDigit(n, k=None):
     # first creates a new string by concatenation n, k number of times
     # adds the digit in the result repeatedly until there is only one digit left
     # returns the final digit as an integer
@@ -26,3 +26,8 @@ def superDigit(n, k):
     p = sumDigits(n)
     # return recursive call of superDigit with p
     return superDigit(p)
+
+
+print(superDigit("9875", 4))  # 8
+print(superDigit("148", 3))  # 3
+print(superDigit("123", 3))  # 9
