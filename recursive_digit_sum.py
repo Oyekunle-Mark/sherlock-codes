@@ -1,9 +1,12 @@
 def sumDigits(n):
     # initialize sum to zero
+    sum = 0
     # loop through every character in n
+    for c in n:
         # add the integer cast of character to sum
+        sum += int(c)
     # return sum as a string
-    pass
+    return str(sum)
 
 
 def superDigit(n, k):
