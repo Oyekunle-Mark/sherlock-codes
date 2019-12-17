@@ -18,12 +18,12 @@ def superDigit(n, k):
     if len(n) == 1:
         # return n as an int
         return int(n)
+    # call sumDigits on n and save the result in n
+    n = sumDigits(n)
     # assign the concatenation of n, k number of times to n
     n = n * k
-    # call sumDigits on n and save the result in p
-    p = sumDigits(n)
-    # return recursive call of superDigit with p
-    return superDigit(p, 1)
+    # return recursive call of superDigit with n
+    return superDigit(n, 1)
 
 
 print(superDigit("9875", 4))  # 8
