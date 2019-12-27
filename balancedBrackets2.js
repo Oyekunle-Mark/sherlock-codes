@@ -67,12 +67,13 @@ function randomPair(string) {
       }
     }
   }
-  
+
   // if stack is not empty
   if (stack.length !== 0) {
     // return false
     return false;
   }
+  
   // return true
   return true;
 }
