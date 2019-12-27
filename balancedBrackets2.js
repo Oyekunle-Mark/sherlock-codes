@@ -73,7 +73,7 @@ function randomPair(string) {
     // return false
     return false;
   }
-  
+
   // return true
   return true;
 }
