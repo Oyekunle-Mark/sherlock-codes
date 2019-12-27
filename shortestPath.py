@@ -115,12 +115,6 @@ def buildGraph(graph, attr):
     return vertices
 
 
-# g = Graph()
-# buildGraph(g, ["5", "A", "B", "C", "D", "F",
-#                "A-B", "A-C", "B-C", "C-D", "D-F"])
-# print(g.vertices)
-
-
 def ShortestPath(strArr):
     """
     Uses the ADTs and parser to build the graph and build path
