@@ -7,7 +7,7 @@ function jumpingOnClouds(c) {
       jumps++;
       continue;
     }
-  
+
     if (c[i + 1] === 0) jumps++;
   }
 
