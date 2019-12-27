@@ -61,6 +61,7 @@ def findDimension(coor):
     length = coor[3][0] - coor[0][0]
     # find breadth using the second item of the first and last coordinates
     breadth = coor[3][1] - coor[0][1]
+
     # return the multiplication of the length and breadth
     return [abs(length), abs(breadth)]
 
