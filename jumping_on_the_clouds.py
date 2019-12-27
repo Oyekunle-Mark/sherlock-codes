@@ -1,10 +1,11 @@
 def jumpingOnClouds(c):
-    # should start jump at 0
-    # can only jump 1 or 2 index forward
-    # will run in O(n) time
-    # must avoid list items that are 0's
-    # should jump 2 steps forward if there are two consecutive 1's
-
+    """
+    should start jump at 0
+    can only jump 1 or 2 index forward
+    will run in O(n) time
+    must avoid list items that are 0's
+    should jump 2 steps forward if there are two consecutive 1's
+    """
     # initialize jump to zero
     jump = 0
     # initialize index to zero
