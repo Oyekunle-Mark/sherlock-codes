@@ -1,10 +1,11 @@
 def pairs(k, arr):
-    # find the number of pairs of number having difference of k
-    # can run in O(n) time
-    # add all numbers to a set to make lookup O(1) operation
-    # to find pairs, add k to every number in arr
-    # add see if the result is in the set
-
+    """
+    find the number of pairs of number having difference of k
+    can run in O(n) time
+    add all numbers to a set to make lookup O(1) operation
+    to find pairs, add k to every number in arr
+    add see if the result is in the set
+    """
     # initialize count to zero
     count = 0
     # initialize numbers to empty set
