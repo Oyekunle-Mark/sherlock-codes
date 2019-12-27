@@ -67,6 +67,7 @@ function randomPair(string) {
       }
     }
   }
+  
   // if stack is not empty
   if (stack.length !== 0) {
     // return false
