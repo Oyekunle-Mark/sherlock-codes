@@ -30,6 +30,7 @@ function isMatched(arr) {
     // decrement last
     last--;
   }
+
   // return true
   return true;
 }
