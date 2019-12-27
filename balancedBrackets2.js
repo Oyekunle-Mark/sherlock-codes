@@ -17,6 +17,7 @@ function isMatched(arr) {
   let first = 0;
   // set last to the length of arr minus one
   let last = arr.length - 1;
+
   // loop while first is less than last
   while (first < last) {
     // if first of arr does not have a closing tag at last of arr
