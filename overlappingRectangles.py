@@ -81,12 +81,6 @@ def findOverlap(coor):
     return l2
 
 
-# print(findOverlap([[0, 0], [0, -2], [3, 0],
-#                    [3, -2], [2, -1], [3, -1], [2, 3], [3, 3]]))
-# print(findOverlap([[0, 0], [5, 0], [0, 2], [
-#       5, 2], [2, 1], [5, 1], [2, -1], [5, -1]]))
-
-
 def OverlappingRectangles(strArr):
     """
     Heavy lifting done here, performs operations.
