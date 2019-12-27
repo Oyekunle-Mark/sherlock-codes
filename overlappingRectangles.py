@@ -36,10 +36,6 @@ def parseStrArr(attr):
     return ret
 
 
-# print(parseStrArr(["(0,0),(5,0),(0,2),(5,2),(2,1),(5,1),(2,-1),(5,-1)"]))
-# print(parseStrArr(["(0,0),(5,0),(0,2),(5,2),(2,1),(5,1),(2,-1),(5,-1)"]))
-
-
 def findArea(coor):
     """
     Finds the area of a rectangle from coordinates
