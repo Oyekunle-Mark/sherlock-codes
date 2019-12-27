@@ -12,6 +12,7 @@ def jumpingOnClouds(c, k):
         index = (index + k) % length
         # decrement energy by one
         energy -= 1
+
         # if item at the index of c is 1,
         if c[index] == 1:
             # decrement energy by a further two
