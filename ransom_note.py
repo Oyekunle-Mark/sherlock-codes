@@ -10,9 +10,6 @@ def count(words):
     return ret
 
 
-# print(count(["give", "me", "one", "one", "One", "grand", "today", "night"]))
-
-
 def checkMagazine(magazine, note):
     # checks if magazine contains the same words in note
     # words are case sensitive
