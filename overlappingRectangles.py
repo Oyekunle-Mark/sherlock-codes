@@ -66,10 +66,6 @@ def findDimension(coor):
     return [abs(length), abs(breadth)]
 
 
-# print(findArea([[0, 0], [5, 0], [0, 2], [5, 2]]))
-# print(findArea([[0, 0], [0, -2], [3, 0], [3, -2]]))
-# print(findArea([[2, -1], [3, -1], [2, 3], [3, 3]]))
-
 def findOverlap(coor):
     """
     Returns the overlap
