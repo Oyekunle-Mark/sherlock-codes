@@ -9,7 +9,7 @@ function sockMerchant(n, ar) {
    * This problem can be solved in linear time
    * The first pass should count the occurrence of each number
    * The second pass should check the number of pairs extractable from
-   * number of each pari
+   * number of each pair
    * Return the overall pair count.
    */
 
