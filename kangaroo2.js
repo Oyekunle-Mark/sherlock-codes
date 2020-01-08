@@ -32,3 +32,10 @@ function kangaroo(x1, v1, x2, v2) {
 
   return 'YES';
 }
+
+console.log('TCL: kangaroo(0, 2, 5, 3)', kangaroo(0, 2, 5, 3));
+console.log('TCL: kangaroo(0, 3, 4, 2)', kangaroo(0, 3, 4, 2));
+console.log(
+  'TCL: kangaroo(1571, 4240, 9023, 4234)',
+  kangaroo(1571, 4240, 9023, 4234),
+);
