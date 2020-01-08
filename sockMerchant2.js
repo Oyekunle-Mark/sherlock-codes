@@ -1,3 +1,9 @@
+/**
+ * Finds the number of matching pairs from an array
+ * @param {number} n
+ * @param {number[]} ar
+ * @returns
+ */
 function sockMerchant(n, ar) {
   const numOfEachSock = {};
   let pairs = 0;
