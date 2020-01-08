@@ -5,7 +5,15 @@
  * @returns
  */
 function sockMerchant(n, ar) {
-  const numOfEachSock = {};
+  /*
+  * This problem can be solved in linear time
+  * The first pass should count the occurrence of each number
+  * The second pass should check the number of pairs extractable from 
+  * number of each pari
+  * Return the overall pair count.
+  */
+  
+    const numOfEachSock = {};
   let pairs = 0;
 
   for (let i = 0; i < n; i++) {
