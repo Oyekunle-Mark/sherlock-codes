@@ -4,10 +4,15 @@
  * @param {number} v1
  * @param {number} x2
  * @param {number} v2
- * @returns
+ * @returns {string}
  */
 function kangaroo(x1, v1, x2, v2) {
-  if ((x1 > x2 && v1 > v2) || (x2 > x1 && v2 > v1)) return 'NO';
+  // if both the start point and jump rate of any kangaroo
+  // is greater than start point and jump of the other
+  // then, the answer is a 'NO'
+  if ((x1 > x2 && v1 > v2) || (x2 > x1 && v2 > v1)) {
+    return 'NO';
+  }
 
   let firstKangarooDistance = x1,
     secondKangarooDistance = x2;
