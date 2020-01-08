@@ -14,9 +14,11 @@ function kangaroo(x1, v1, x2, v2) {
     return 'NO';
   }
 
-  let firstKangarooDistance = x1,
-    secondKangarooDistance = x2;
+  // initialize variables to hold the start point of both kangaroos
+  let firstKangarooDistance = x1;
+  let secondKangarooDistance = x2;
 
+  // keep looping while kangaroos distance is not the same
   while (firstKangarooDistance !== secondKangarooDistance) {
     firstKangarooDistance += v1;
     secondKangarooDistance += v2;
