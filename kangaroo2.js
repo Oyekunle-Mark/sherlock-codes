@@ -23,11 +23,14 @@ function kangaroo(x1, v1, x2, v2) {
     firstKangarooDistance += v1;
     secondKangarooDistance += v2;
 
+    // set an arbitrary point at which the loop should break if the
+    // distances are not the same
     if (
       firstKangarooDistance >= 100000000 ||
       secondKangarooDistance >= 100000000
-    )
+    ) {
       return 'NO';
+    }
   }
 
   return 'YES';
