@@ -14,6 +14,7 @@ def solution(start, length):
     index = length - 1
     # max to the sum of start and square of length
     max = start + (length * length)
+
     # while start is less than max
     while start < max:
         # if index is equivalent to cutoff
@@ -34,6 +35,7 @@ def solution(start, length):
             index -= 1
         # increment start
         start += 1
+
     # return checksum
     return checksum
 
