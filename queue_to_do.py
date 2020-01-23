@@ -8,32 +8,19 @@ def solution(start, length):
     # HOW!
     # initialize ids to empty list
     ids = []
-    # initialize start to one
-    start = 1
-    # initialize max to the square of length
-    max = length * length
-    # initialize offset to length
-    offset = length
-    # initialize cutoff to zero
-    cutoff = 0
-    # loop while start is less than max
-    while start < max:
-        # if start modulo length is equivalent to cutoff
-        if start % length == cutoff:
+    # set cutoff to zero
+    # set index to 1
+    # max to the sum of start and square of length
+    # while start is less than max
+        # if index modulo length is equivalent to cutoff
             # add start to ids
-            ids.append(start)
-            # add cutoff to start
-            start += cutoff
             # increment cutoff
-            cutoff += 1
-        # otherwise,
-        else:
+            # increment start by cutoff
+            # reset index to 1
+        # otherwise
             # add start to ids
-            ids.append(start)
         # increment start
-        start += 1
     # return ids
-    return ids
 
 
 print(solution(0, 3))
