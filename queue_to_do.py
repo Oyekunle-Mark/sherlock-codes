@@ -1,3 +1,6 @@
+from time import time
+
+
 def solution(start, length):
     """Generates the checksum of a matrix of size length X length
     by first dropping every number after column (row number - 1)
@@ -108,8 +111,6 @@ def solution2(start, length):
     return checksum
 
 
-from time import time
-
 t = time()
 print(solution(0, 3))
 print(solution(0, 100))
@@ -119,6 +120,3 @@ t = time()
 print(solution2(0, 3))
 print(solution2(0, 100))
 print("Second solution took", time() - t)
-
-
-
