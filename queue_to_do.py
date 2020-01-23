@@ -1,5 +1,48 @@
 from time import time
 
+"""
+Find XOR of numbers from the range [L, R]
+
+Naive Approach: Initialize answer as zero, Traverse all numbers from L to R and perform XOR of the numbers one by one with the answer. This would take O(N) time.
+
+Efficient Approach: By following the approach discussed here, we can find the XOR of elements from the range [1, N] in O(1) time.
+Using this approach, we have to find xor of elements from the range [1, L – 1] and from the range [1, R] and then xor the respective answers again to get the xor of the elements from the range [L, R]. This is because every element from the range [1, L – 1] will get XORed twice in the result resulting in a 0 which when XORed with the elements of the range [L, R] will give the result.
+
+# Python3 implementation of the approach 
+from operator import xor 
+  
+# Function to return the XOR of elements 
+# from the range [1, n] 
+def findXOR(n): 
+    mod = n % 4; 
+  
+    # If n is a multiple of 4 
+    if (mod == 0): 
+        return n; 
+  
+    # If n % 4 gives remainder 1 
+    elif (mod == 1): 
+        return 1; 
+  
+    # If n % 4 gives remainder 2 
+    elif (mod == 2): 
+        return n + 1; 
+  
+    # If n % 4 gives remainder 3 
+    elif (mod == 3): 
+        return 0; 
+  
+# Function to return the XOR of elements 
+# from the range [l, r] 
+def findXORFun(l, r): 
+    return (xor(findXOR(l - 1) , findXOR(r))); 
+  
+# Driver code 
+l = 4; r = 8; 
+  
+print(findXORFun(l, r)); 
+"""
+
 
 def solution(start, length):
     """Generates the checksum of a matrix of size length X length
