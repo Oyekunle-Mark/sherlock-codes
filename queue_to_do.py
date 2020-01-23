@@ -109,8 +109,27 @@ def solution(start, length):
     return checksum
 
 
-def myXOR(x, y):
-    return (x | y) & (~x | ~y)
+def findXOR(n):
+    """
+    Calculate XOR from 1 to n from the range [1, n]
+    """
+    mod = n % 4
+
+    # If n is a multiple of 4
+    if (mod == 0):
+        return n
+
+    # If n % 4 gives remainder 1
+    elif (mod == 1):
+        return 1
+
+    # If n % 4 gives remainder 2
+    elif (mod == 2):
+        return n + 1
+
+    # If n % 4 gives remainder 3
+    elif (mod == 3):
+        return 0
 
 
 def solution2(start, length):
