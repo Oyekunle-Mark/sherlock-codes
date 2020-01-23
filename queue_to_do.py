@@ -174,11 +174,11 @@ def solution2(start, length):
 
 
 t = time()
-print(solution(0, 3))
-print(solution(17, 4))
+print(solution(0, 50))
+print(solution(17, 400))
 print("First solution took", time() - t)
 
 t = time()
-print(solution2(0, 3))
-print(solution2(17, 4))
+print(solution2(0, 50))
+print(solution2(17, 400))
 print("Second solution took", time() - t)
