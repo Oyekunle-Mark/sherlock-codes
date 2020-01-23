@@ -162,24 +162,9 @@ def solution2(start, length):
 
     # while start is less than max
     while start < max:
-        # if index is equivalent to cutoff
-        if index == cutoff:
-            # set checksum to the XOR of start
-            checksum = myXOR(checksum, start)
-            # increment start by cutoff
-            start += cutoff
-            # increment cutoff
-            cutoff += 1
-            # reset index to length minus one
-            index = length - 1
-        # otherwise
-        else:
-            # set checksum to the XOR of start
-            checksum = myXOR(checksum, start)
-            # decrement index
-            index -= 1
-        # increment start
-        start += 1
+        checksum ^= findXOR(start - 1) ^ findXOR(start + index)
+        index -= 1
+        start += length
 
     # return checksum
     return checksum
@@ -187,10 +172,10 @@ def solution2(start, length):
 
 t = time()
 print(solution(0, 3))
-print(solution(0, 100))
+print(solution(17, 4))
 print("First solution took", time() - t)
 
 t = time()
 print(solution2(0, 3))
-print(solution2(0, 100))
+print(solution2(17, 4))
 print("Second solution took", time() - t)
