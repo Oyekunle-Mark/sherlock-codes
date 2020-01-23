@@ -6,7 +6,7 @@ def solution(start, length):
     # returns the XOR of the remaining number
 
     # HOW!
-    # initialize ids to empty list
+    # initialize checksum to zero
     ids = []
     # set cutoff to zero
     cutoff = 0
@@ -18,7 +18,7 @@ def solution(start, length):
     while start < max:
         # if index is equivalent to cutoff
         if index == cutoff:
-            # add start to ids
+            # set checksum to the XOR of start
             ids.append(start)
             # increment start by cutoff
             start += cutoff
@@ -28,13 +28,13 @@ def solution(start, length):
             index = length - 1
         # otherwise
         else:
-            # add start to ids
+            # set checksum to the XOR of start
             ids.append(start)
             # decrement index
             index -= 1
         # increment start
         start += 1
-    # return ids
+    # return checksum
     return ids
 
 
