@@ -30,5 +30,11 @@ def solution(start, length):
         else:
             # add start to ids
             ids.append(start)
+        # increment start
+        start += 1
     # return ids
     return ids
+
+
+print(solution(0, 3))
+print(solution(17, 4))
