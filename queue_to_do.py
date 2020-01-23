@@ -155,11 +155,10 @@ def solution2(start, length):
     checksum = 0
     # set size to length minus one
     size = length - 1
-    # max to the sum of start and square of length
-    max = start + (length * length)
 
-    # while start is less than max
-    while start < max:
+    # while size is greater than or equal zero
+    # we just need to perform the operation for the number of rows we have
+    while size >= 0:
         # Find xor of elements from the range [1, start – 1] and from the range [1, start + size]
         # and then xor the respective answers again
         # to get the xor of the elements from the range [L, R]
@@ -174,11 +173,11 @@ def solution2(start, length):
 
 
 t = time()
-print(solution(0, 50))
-print(solution(17, 400))
+print(solution(0, 500))
+print(solution(17, 1000))
 print("First solution took", time() - t)
 
 t = time()
-print(solution2(0, 50))
-print(solution2(17, 400))
+print(solution2(0, 500))
+print(solution2(17, 1000))
 print("Second solution took", time() - t)
