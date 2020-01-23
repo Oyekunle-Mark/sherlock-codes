@@ -10,28 +10,28 @@ def solution(start, length):
     ids = []
     # set cutoff to zero
     cutoff = 0
-    # set index to 1
-    index = 1
+    # set index to length minus one
+    index = length - 1
     # max to the sum of start and square of length
     max = start + (length * length)
     # while start is less than max
     while start < max:
-        # if index modulo length is equivalent to cutoff
-        if index % length == cutoff:
+        # if index is equivalent to cutoff
+        if index == cutoff:
             # add start to ids
             ids.append(start)
             # increment start by cutoff
             start += cutoff
             # increment cutoff
             cutoff += 1
-            # reset index to 1
-            index = 1
+            # reset index to length minus one
+            index = length - 1
         # otherwise
         else:
             # add start to ids
             ids.append(start)
-            # increment index
-            index += 1
+            # decrement index
+            index -= 1
         # increment start
         start += 1
     # return ids
