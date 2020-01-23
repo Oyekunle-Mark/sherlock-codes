@@ -8,10 +8,22 @@ Naive Approach: Initialize answer as zero, Traverse all numbers from L to R and 
 Efficient Approach: By following the approach discussed here, we can find the XOR of elements from the range [1, N] in O(1) time.
 Using this approach, we have to find xor of elements from the range [1, L – 1] and from the range [1, R] and then xor the respective answers again to get the xor of the elements from the range [L, R]. This is because every element from the range [1, L – 1] will get XORed twice in the result resulting in a 0 which when XORed with the elements of the range [L, R] will give the result.
 
-# Python3 implementation of the approach 
-from operator import xor 
-  
-# Function to return the XOR of elements 
+
+Calculate XOR from 1 to n
+
+Method 1 (Naive Approach):
+1- Initialize result as 0.
+1- Traverse all numbers from 1 to n.
+2- Do XOR of numbers one by one with result.
+3- At the end, return result.
+
+Method 2 (Efficient method) :
+1- Find the remainder of n by moduling it with 4.
+2- If rem = 0, then xor will be same as n.
+3- If rem = 1, then xor will be 1.
+4- If rem = 2, then xor will be n+1.
+5- If rem = 3 ,then xor will be 0.
+
 # from the range [1, n] 
 def findXOR(n): 
     mod = n % 4; 
@@ -31,16 +43,16 @@ def findXOR(n):
     # If n % 4 gives remainder 3 
     elif (mod == 3): 
         return 0; 
-  
+
+
 # Function to return the XOR of elements 
 # from the range [l, r] 
+
+# Python3 implementation of the approach 
+from operator import xor 
+  
 def findXORFun(l, r): 
     return (xor(findXOR(l - 1) , findXOR(r))); 
-  
-# Driver code 
-l = 4; r = 8; 
-  
-print(findXORFun(l, r)); 
 """
 
 
