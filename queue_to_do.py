@@ -1,4 +1,15 @@
 def solution(start, length):
+    """Generates the checksum of a matrix of size length X length
+    by first dropping every number after column (row number - 1)
+    from the end of each row and XORing the remaining numbers.
+
+    Arguments:
+        start {int} -- the number to begin with
+        length {int} -- the size of the row and column
+
+    Returns:
+        int -- The generated checksum
+    """
     # WHAT!
     # Starts from the number start
     # begins to leave out one number from the end
