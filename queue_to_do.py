@@ -153,17 +153,15 @@ def solution2(start, length):
     # HOW!
     # initialize checksum to zero
     checksum = 0
-    # set cutoff to zero
-    cutoff = 0
-    # set index to length minus one
-    index = length - 1
+    # set size to length minus one
+    size = length - 1
     # max to the sum of start and square of length
     max = start + (length * length)
 
     # while start is less than max
     while start < max:
-        checksum ^= findXOR(start - 1) ^ findXOR(start + index)
-        index -= 1
+        checksum ^= findXOR(start - 1) ^ findXOR(start + size)
+        size -= 1
         start += length
 
     # return checksum
