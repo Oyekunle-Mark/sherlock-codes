@@ -160,8 +160,13 @@ def solution2(start, length):
 
     # while start is less than max
     while start < max:
+        # Find xor of elements from the range [1, start – 1] and from the range [1, start + size]
+        # and then xor the respective answers again
+        # to get the xor of the elements from the range [L, R]
         checksum ^= findXOR(start - 1) ^ findXOR(start + size)
+        # reduce the size to knock off another number from the end
         size -= 1
+        # increment number to the start of the next row
         start += length
 
     # return checksum
