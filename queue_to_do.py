@@ -7,7 +7,7 @@ def solution(start, length):
 
     # HOW!
     # initialize checksum to zero
-    ids = []
+    checksum = 0
     # set cutoff to zero
     cutoff = 0
     # set index to length minus one
@@ -19,7 +19,7 @@ def solution(start, length):
         # if index is equivalent to cutoff
         if index == cutoff:
             # set checksum to the XOR of start
-            ids.append(start)
+            checksum ^= start
             # increment start by cutoff
             start += cutoff
             # increment cutoff
@@ -29,13 +29,13 @@ def solution(start, length):
         # otherwise
         else:
             # set checksum to the XOR of start
-            ids.append(start)
+            checksum ^= start
             # decrement index
             index -= 1
         # increment start
         start += 1
     # return checksum
-    return ids
+    return checksum
 
 
 print(solution(0, 3))
