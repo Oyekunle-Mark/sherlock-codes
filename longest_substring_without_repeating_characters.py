@@ -36,20 +36,20 @@ class Solution:
                 count = 0
                 # set char_set to empty set
                 char_set = set()
-            # otherwise,
-            else:
-                # increment count
-                count += 1
-                # if count is greater than max_count
-                if count > max_count:
-                    # set max_count to count
-                    max_count = count
-                # add current character to char_set
-                char_set.add(char)
+            # increment count
+            count += 1
+            # if count is greater than max_count
+            if count > max_count:
+                # set max_count to count
+                max_count = count
+            # add current character to char_set
+            char_set.add(char)
         # return max_count
         return max_count
 
-# s = Solution()
-# print(s.lengthOfLongestSubstring("abcabcbb"))
-# print(s.lengthOfLongestSubstring("bbbbb"))
-# print(s.lengthOfLongestSubstring("pwwkew"))
+
+s = Solution()
+print(s.lengthOfLongestSubstring("abcabcbb"))
+print(s.lengthOfLongestSubstring("bbbbb"))
+print(s.lengthOfLongestSubstring("pwwkew"))
+print(s.lengthOfLongestSubstring("aab"))
