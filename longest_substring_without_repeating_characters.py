@@ -25,6 +25,7 @@ Explanation: The answer is "wke", with the length of 3.
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         # SLIDING WINDOW APPROACH
+
         # set count and max_count to zero
         # set i and j to zero
         count = max_count = i = j = 0
