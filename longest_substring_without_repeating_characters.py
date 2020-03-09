@@ -24,32 +24,50 @@ Explanation: The answer is "wke", with the length of 3.
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # set count and max_count to zero
-        count = max_count = 0
-        # set char_set to an empty set
-        char_set = set()
+        # # set count and max_count to zero
+        # count = max_count = 0
+        # # set char_set to an empty set
+        # char_set = set()
 
-        # loop through characters in s
-        for char in s:
-            # if present character is in char_set
-            if char in char_set:
-                # set count to zero
-                count = 0
-                # set char_set to empty set
-                char_set = set()
+        # # loop through characters in s
+        # for char in s:
+        #     # if present character is in char_set
+        #     if char in char_set:
+        #         # set count to zero
+        #         count = 0
+        #         # set char_set to empty set
+        #         char_set = set()
 
-            # increment count
-            count += 1
+        #     # increment count
+        #     count += 1
 
-            # if count is greater than max_count
-            if count > max_count:
-                # set max_count to count
-                max_count = count
-            # add current character to char_set
-            char_set.add(char)
+        #     # if count is greater than max_count
+        #     if count > max_count:
+        #         # set max_count to count
+        #         max_count = count
+        #     # add current character to char_set
+        #     char_set.add(char)
 
+        # # return max_count
         # return max_count
-        return max_count
+
+        # SLIDING WINDOW APPROACH
+        # set count and max_count to zero
+        # set i and j to zero
+        # set char_set to an empty set
+        # find the length of s and set to len_s
+        # loop while i and j are less than len_s
+            # if character at index j of s is in char_set
+                # increment i by one and set j to i
+                # set char_set to an empty set
+                # set count to zero
+            # otherwise
+                # increment count
+                # if count is greater than max_count
+                    # set max_count to count
+                # add the current character to the char_set
+                # increment j
+        # return max_count
 
 
 s = Solution()
