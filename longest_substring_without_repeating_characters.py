@@ -24,4 +24,15 @@ Explanation: The answer is "wke", with the length of 3.
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        pass
+        # set count and max to zero
+        # set char_set to an empty set
+        # loop through characters in s
+            # if present character is in char_set
+                # set count to zero
+                # set char_set to empty set
+            # otherwise,
+                # increment count
+                    # if count is greater than max
+                        # set max to count
+                # add current character to char_set
+        # return max
