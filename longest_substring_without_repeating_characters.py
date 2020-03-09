@@ -65,7 +65,7 @@ class Solution:
             if s[j] in char_set:
                 # increment i by one and set j to i
                 i += 1
-                j = 1
+                j = i
                 # set char_set to an empty set
                 char_set = set()
                 # set count to zero
