@@ -32,6 +32,7 @@ class Solution:
         char_set = set()
         # find the length of s and set to len_s
         len_s = len(s)
+
         # loop while i and j are less than len_s
         while(i < len_s and j < len_s):
             # if character at index j of s is in char_set
@@ -48,13 +49,16 @@ class Solution:
                 # increment count
                 count += 1
                 # if count is greater than max_count
+
                 if count > max_count:
                     # set max_count to count
                     max_count = count
+
                 # add the current character to the char_set
                 char_set.add(s[j])
                 # increment j
                 j += 1
+
         # return max_count
         return max_count
 
