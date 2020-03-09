@@ -48,3 +48,8 @@ class Solution:
                 char_set.add(char)
         # return max_count
         return max_count
+
+# s = Solution()
+# print(s.lengthOfLongestSubstring("abcabcbb"))
+# print(s.lengthOfLongestSubstring("bbbbb"))
+# print(s.lengthOfLongestSubstring("pwwkew"))
